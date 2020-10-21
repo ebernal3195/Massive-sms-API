@@ -1,0 +1,33 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Envio_sms_masivos.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Ejecucion_automatica" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="WSConsultaCobros" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://35.167.149.196/ecobro/controlpagos/getPendingPaymentsToSendSMS</Value>
+    </Setting>
+    <Setting Name="WSActualizarCobro" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://35.167.149.196/ecobro/controlpagos/setPendingPaymentsToSendSMSAsSent</Value>
+    </Setting>
+    <Setting Name="CantidadCaracteres" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">160</Value>
+    </Setting>
+    <Setting Name="SegundosSleepActualizacion" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0.1</Value>
+    </Setting>
+    <Setting Name="Parametros_disponibles" Type="System.String" Scope="User">
+      <Value Profile="(Default)">|Contrato|, |Saldo|, |Recibo|, |Monto|, |Cliente|, |Celular|, |Cobrador|, |Fecha_hora_evento|, |Estatus_cobro|, |No_cobro|, |Saldo-Monto|</Value>
+    </Setting>
+    <Setting Name="Plantilla_mensaje" Type="System.String" Scope="User">
+      <Value Profile="(Default)">PABS: Hemos recibido su abono por $|Monto| con folio |Recibo| para el contrato |Contrato| con saldo $|Saldo-Monto| el día |Fecha_hora_evento|</Value>
+    </Setting>
+    <Setting Name="SegundosSleepEnviarMensaje" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0.1</Value>
+    </Setting>
+    <Setting Name="Sandbox" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

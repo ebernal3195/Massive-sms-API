@@ -1,0 +1,23 @@
+2020-10-20 18:12:20: Se inicia programa
+2020-10-20 18:12:21: Se cargó la configuración
+2020-10-20 18:12:21: Se termina programa
+##############################################################
+
+2020-10-20 18:12:28: Se inicia programa
+2020-10-20 18:12:28: Se cargó la configuración
+2020-10-20 18:12:28: Se termina programa
+##############################################################
+
+2020-10-20 18:12:46: Se inicia programa
+2020-10-20 18:12:57: Se cargó la configuración
+2020-10-20 18:13:09: Se termina programa
+##############################################################
+
+2020-10-20 18:13:39: Se inicia programa
+2020-10-20 18:13:39: Se cargó la configuración
+2020-10-20 18:13:39: Comienza ejecución en modo no automático
+2020-10-20 18:13:43: Comienza consulta de cobros
+2020-10-20 18:16:41: Se inicia programa
+2020-10-20 18:16:41: Se cargó la configuración
+2020-10-20 18:16:41: Comienza ejecución en modo no automático
+2020-10-20 18:16:44: Comienza consulta de cobros

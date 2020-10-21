@@ -1,0 +1,81 @@
+2020-10-21 12:56:26: Comienza revisión de lista
+2020-10-21 12:56:27: 1. 1L,40295 -> Actualizado
+2020-10-21 12:56:27: 2. 14C4055 -> Actualizado
+2020-10-21 12:56:27: Termina revisión de lista
+2020-10-21 12:58:14: Comienza revisión de lista
+2020-10-21 12:58:14: 1. 1L,40295 -> Actualizado
+2020-10-21 12:58:15: 2. 14C4055 -> Actualizado
+2020-10-21 12:58:15: Termina revisión de lista
+2020-10-21 13:02:30: Comienza revisión de lista
+2020-10-21 13:02:31: 1. 1L,40295 -> Actualizado -> 3 - Mensaje enviado
+2020-10-21 13:02:31: 2. 14C4055 -> Actualizado -> 0 - Descripción por defecto
+2020-10-21 13:02:31: Termina revisión de lista
+2020-10-21 13:02:52: Se termina programa
+##############################################################
+
+2020-10-21 13:03:47: Comienza revisión de lista
+2020-10-21 13:03:47: 1. 1L,40295 -> Actualizado -> 3 - Mensaje enviado
+2020-10-21 13:03:48: 2. 14C4055 -> Actualizado -> 0 - Descripción por defecto
+2020-10-21 13:03:49: Termina revisión de lista
+2020-10-21 13:04:01: Se termina programa
+##############################################################
+
+2020-10-21 13:13:48: Comienza revisión de lista
+2020-10-21 13:13:49: 1. 1L,40295 -> Actualizado -> 3 - Mensaje enviado
+2020-10-21 13:13:50: 2. 14C4055 -> Actualizado -> 8 - Número con formato incorrecto
+2020-10-21 13:13:50: Termina revisión de lista
+2020-10-21 13:16:14: Comienza revisión de lista
+2020-10-21 13:16:15: 1. 1L,40295 -> Actualizado -> 3 - Mensaje enviado
+2020-10-21 13:16:15: 2. 14C4055 -> Actualizado -> 8 - Número con formato incorrecto
+2020-10-21 13:16:16: Termina revisión de lista
+2020-10-21 13:16:31: Se termina programa
+##############################################################
+
+2020-10-21 13:19:07: Comienza revisión de lista
+2020-10-21 13:19:08: 1. 1L,40295 -> Actualizado -> 3 - Mensaje enviado
+2020-10-21 13:19:08: 2. 14C4055 -> Actualizado -> 8 - Número con formato incorrecto
+2020-10-21 13:19:08: Termina revisión de lista
+2020-10-21 13:19:19: Se termina programa
+##############################################################
+
+2020-10-21 13:23:36: Comienza revisión de lista
+2020-10-21 13:23:48: 1. 1L,40295 -> Actualizado -> 3 - Mensaje enviado
+2020-10-21 13:23:49: 2. 14C4055 -> Actualizado -> 8 - Número con formato incorrecto
+2020-10-21 13:23:49: Termina revisión de lista
+2020-10-21 13:24:00: Se termina programa
+##############################################################
+
+2020-10-21 13:25:05: Comienza revisión de lista
+2020-10-21 13:25:06: 1. 1L,40295 -> Actualizado -> 3 - Mensaje enviado
+2020-10-21 13:25:06: 2. 14C4055 -> Actualizado -> 8 - Número con formato incorrecto
+2020-10-21 13:25:06: Termina revisión de lista
+2020-10-21 13:25:17: Se termina programa
+##############################################################
+
+2020-10-21 13:32:20: Comienza revisión de lista
+2020-10-21 13:46:45: Comienza revisión de lista
+2020-10-21 13:48:58: Comienza revisión de lista
+2020-10-21 13:49:02: 1. 1L,40295 -> Actualizado -> 999 - Error en método EnviarSMSconWS: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'Envio_sms_masivos.Clases.References' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path 'references', line 1, position 89.
+2020-10-21 13:49:02: Termina revisión de lista
+2020-10-21 13:49:27: Comienza revisión de lista
+2020-10-21 13:50:15: Comienza revisión de lista
+2020-10-21 13:53:36: Comienza revisión de lista
+2020-10-21 13:53:37: 1. 1L,40295 -> Actualizado -> 3 - Mensaje enviado
+2020-10-21 13:53:37: 2. 14C4055 -> Actualizado -> 8 - Número con formato incorrecto
+2020-10-21 13:53:37: Termina revisión de lista
+2020-10-21 13:54:06: Se termina programa
+##############################################################
+
+2020-10-21 14:02:14: Comienza revisión de lista
+2020-10-21 14:02:15: 1. 1L,40295 -> Actualizado -> 3 - Mensaje enviado
+2020-10-21 14:02:15: 2. 14C4055 -> Actualizado -> 8 - Número con formato incorrecto
+2020-10-21 14:02:16: Termina revisión de lista
+2020-10-21 14:06:16: Comienza revisión de lista
+2020-10-21 14:06:17: 1. 1L,40295 -> Actualizado -> 3 - Mensaje enviado
+2020-10-21 14:06:17: 2. 14C4055 -> Actualizado -> 8 - Número con formato incorrecto
+2020-10-21 14:06:17: Termina revisión de lista
+2020-10-21 14:06:35: Se termina programa
+##############################################################
+
