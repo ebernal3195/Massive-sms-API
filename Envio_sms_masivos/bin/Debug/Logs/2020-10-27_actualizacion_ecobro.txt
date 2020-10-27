@@ -1,0 +1,21 @@
+2020-10-27 11:31:51: Comienza revisión de lista
+2020-10-27 11:31:52: 1. 1L,40295 -> Actualizado -> 3 - Mensaje enviado
+2020-10-27 11:31:52: 2. 14C4055 -> Actualizado -> 8 - Número con formato incorrecto
+2020-10-27 11:31:52: Termina revisión de lista
+2020-10-27 11:32:07: Se termina programa
+##############################################################
+
+2020-10-27 11:32:52: Comienza revisión de lista
+2020-10-27 11:32:52: 1. 1L,40295 -> Actualizado -> 3 - Mensaje enviado
+2020-10-27 11:32:53: 2. 14C4055 -> Actualizado -> 8 - Número con formato incorrecto
+2020-10-27 11:32:53: Termina revisión de lista
+2020-10-27 11:33:31: Se termina programa
+##############################################################
+
+2020-10-27 11:59:27: Comienza revisión de lista
+2020-10-27 11:59:29: 1. 1L,40295 -> Actualizado -> 3 - Mensaje enviado
+2020-10-27 11:59:30: 2. 14C4055 -> Actualizado -> 8 - Número con formato incorrecto
+2020-10-27 11:59:30: Termina revisión de lista
+2020-10-27 11:59:30: Se termina programa
+##############################################################
+

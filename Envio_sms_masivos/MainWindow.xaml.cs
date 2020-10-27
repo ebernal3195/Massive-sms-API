@@ -21,9 +21,6 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-//asignar APIKEY DE PRODUCCION
-//Sandbox = 0
-
 namespace Envio_sms_masivos
 {
     static class Bitacora
@@ -53,6 +50,7 @@ namespace Envio_sms_masivos
 
         string WSActualizarCobro;
         string Sandbox;
+        string Apikey;
 
         public MainWindow()
         {
@@ -146,6 +144,9 @@ namespace Envio_sms_masivos
                 Segundos_sleep_actualizacion_ecobro = Properties.Settings.Default.SegundosSleepActualizacion;
                 WSActualizarCobro = Properties.Settings.Default.WSActualizarCobro;
                 Sandbox = Properties.Settings.Default.Sandbox;
+
+                //Api key del portal smsmasivos de la cuenta proyectosit@pabsmr.org
+                Apikey = "5ea6af80de907ead6cf0d84c4be73c7c9fde2bda";
 
                 Bitacora.Logger.Info("Se cargó la configuración");
                 return true;
@@ -246,13 +247,13 @@ namespace Envio_sms_masivos
                 //          ]
                 //        }";
 
-                //    //Recorta el Json al nivel de los objetos
-                //    int inicio_arreglo = json.IndexOf("[");
-                //    json = json.Remove(0, inicio_arreglo);
-                //    int fin_arreglo = json.IndexOf("]");
-                //    json = json.Remove(fin_arreglo + 1, (json.Length - fin_arreglo - 1));
+                //Recorta el Json al nivel de los objetos
+                //int inicio_arreglo = json.IndexOf("[");
+                //json = json.Remove(0, inicio_arreglo);
+                //int fin_arreglo = json.IndexOf("]");
+                //json = json.Remove(fin_arreglo + 1, (json.Length - fin_arreglo - 1));
+                //TablaCobros = JsonConvert.DeserializeObject<DataTable>(json);
 
-                //    TablaCobros = JsonConvert.DeserializeObject<DataTable>(json);
                 //------------------------------------------------------------
                 //                      TEST
                 //------------------------------------------------------------
@@ -309,7 +310,7 @@ namespace Envio_sms_masivos
             {
                 var client = new RestClient("https://api.smsmasivos.com.mx/credits/consult");
                 var request = new RestRequest(Method.POST);
-                request.AddHeader("apikey", "0f4264a9b362910f22ef6435a9aaea207c24cd33");
+                request.AddHeader("apikey", Apikey);
                 //request.AddCookie("__cfduid", "dd0b849de0087cd854583849abd8abd6c1603214316");
                 //request.AddCookie("connect.sid", "s%3A2eOa5_GV3EQs5m2GK0pzLrKYa_97bRTf.bsBtTbXEMaxibMe14eIdrCX%2FxmN6qrpUBpzF1X3DWTY");
                 IRestResponse response = client.Execute(request);
@@ -327,6 +328,8 @@ namespace Envio_sms_masivos
                 }
                 else
                 {
+                    Bitacora.Logger.Info("Saldo disponible: " + miSaldo.Credit.ToString());
+
                     return true;
                 }
             }
@@ -460,7 +463,7 @@ namespace Envio_sms_masivos
                 //Nota: si se agota el saldo del servicio se interrumpe el envío
                 if (EnviarSMSconWS(celular, mensaje, _cobro))
                 {
-                    detalle = $"Mensaje enviado a {celular}: {mensaje} >>> Referencia API: {_cobro.referencia}";
+                    detalle = $"Mensaje enviado a {celular}: {mensaje} >>> Referencia del sms: {_cobro.referencia}";
                     Bitacora.Logger.Info(encabezado + detalle);
                 }
                 else
@@ -605,7 +608,7 @@ namespace Envio_sms_masivos
                 var client = new RestClient("https://api.smsmasivos.com.mx/sms/send");
                 var request = new RestRequest(Method.POST);
                 request.AddHeader("content-type", "application/json");
-                request.AddHeader("apikey", "0f4264a9b362910f22ef6435a9aaea207c24cd33");
+                request.AddHeader("apikey", Apikey);
                 //request.AddCookie("__cfduid", "dd0b849de0087cd854583849abd8abd6c1603214316");
                 //request.AddCookie("connect.sid", "s%3AF0xjq31PNmXeVE0cNOGkEkC2kvnkzQkE.i7DUB9ejY9yXNDKxUFEhux%2BXRIl3WOrs8o6%2BzCKPX10");
 

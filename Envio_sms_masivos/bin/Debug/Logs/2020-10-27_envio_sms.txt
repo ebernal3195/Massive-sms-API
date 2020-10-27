@@ -1,0 +1,39 @@
+2020-10-27 11:27:28: Se inicia programa
+2020-10-27 11:27:28: Se cargó la configuración
+2020-10-27 11:27:28: Ejecución en modo de pruebas (el mensaje no llegará al celular ni se descontará del saldo)
+2020-10-27 11:27:28: Comienza ejecución en modo no automático
+2020-10-27 11:27:35: Comienza consulta de cobros
+2020-10-27 11:31:49: Se inicia programa
+2020-10-27 11:31:49: Se cargó la configuración
+2020-10-27 11:31:49: Ejecución en modo de pruebas (el mensaje no llegará al celular ni se descontará del saldo)
+2020-10-27 11:31:49: Comienza ejecución en modo no automático
+2020-10-27 11:31:50: Comienza consulta de cobros
+2020-10-27 11:31:50: Cobros obtenidos: 2
+2020-10-27 11:31:51: 1. 1L,40295 -> Mensaje enviado a 3334971555: PABS: Hemos recibido su abono por $50.00 con folio 1L,40295 para el contrato 1CF030347 con saldo $8,050.00 el día 21/05/2020 07:50 >>> Referencia API: 201027a66de4e917b48VDHTA9HZggrnWFczBwejK
+2020-10-27 11:31:52: 2. 14C4055 -> No se envió el mensaje: Número con formato incorrecto >>> Codigo de error: sms_04
+2020-10-27 11:31:52: Se termina proceso de envio
+##############################################################
+
+2020-10-27 11:32:49: Se inicia programa
+2020-10-27 11:32:49: Se cargó la configuración
+2020-10-27 11:32:49: Ejecución en modo de pruebas (el mensaje no llegará al celular ni se descontará del saldo)
+2020-10-27 11:32:49: Comienza ejecución en modo no automático
+2020-10-27 11:32:51: Comienza consulta de cobros
+2020-10-27 11:32:51: Cobros obtenidos: 2
+2020-10-27 11:32:52: Saldo disponible: 8
+2020-10-27 11:32:52: 1. 1L,40295 -> Mensaje enviado a 3334971555: PABS: Hemos recibido su abono por $50.00 con folio 1L,40295 para el contrato 1CF030347 con saldo $8,050.00 el día 21/05/2020 07:50 >>> Referencia API: 20102759e69570eaaBsjFDBHPvOQw87OuqTnn4Cj
+2020-10-27 11:32:53: 2. 14C4055 -> No se envió el mensaje: Número con formato incorrecto >>> Codigo de error: sms_04
+2020-10-27 11:32:53: Se termina proceso de envio
+##############################################################
+
+2020-10-27 11:59:26: Se inicia programa
+2020-10-27 11:59:26: Se cargó la configuración
+2020-10-27 11:59:26: Comienza ejecución en modo automático
+2020-10-27 11:59:26: Comienza consulta de cobros
+2020-10-27 11:59:26: Cobros obtenidos: 2
+2020-10-27 11:59:27: Saldo disponible: 8
+2020-10-27 11:59:28: 1. 1L,40295 -> Mensaje enviado a 3334971555: PABS: Hemos recibido su abono por $50.00 con folio 1L,40295 para el contrato 1CF030347 con saldo $8,050.00 el día 21/05/2020 07:50 >>> Referencia del sms: 20102793dd614639901Ho6vHEVA109xUtyCXeEyd
+2020-10-27 11:59:29: 2. 14C4055 -> No se envió el mensaje: Número con formato incorrecto >>> Codigo de error: sms_04
+2020-10-27 11:59:29: Se termina proceso de envio
+##############################################################
+

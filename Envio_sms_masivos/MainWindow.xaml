@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Envio_sms_masivos"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded" Closed="Window_Closed">
-    <Grid>
-        <Button x:Name="btnConsultarCobros" Content="Consultar cobros" HorizontalAlignment="Left" Margin="40,220,0,0" VerticalAlignment="Top" Width="145" Click="btnConsultarCobros_Click"/>
+        Title="MainWindow" Height="127" Width="214" Loaded="Window_Loaded" Closed="Window_Closed">
+    <Grid Margin="0,0,2,2">
+        <Button x:Name="btnConsultarCobros" Content="Comenzar envio" HorizontalAlignment="Left" Margin="30,21,0,0" VerticalAlignment="Top" Width="145" Click="btnConsultarCobros_Click" Height="49"/>
 
     </Grid>
 </Window>

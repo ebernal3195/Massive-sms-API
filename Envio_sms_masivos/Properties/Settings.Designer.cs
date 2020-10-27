@@ -25,7 +25,7 @@ namespace Envio_sms_masivos.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool Ejecucion_automatica {
             get {
                 return ((bool)(this["Ejecucion_automatica"]));
@@ -123,7 +123,7 @@ namespace Envio_sms_masivos.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
         public string Sandbox {
             get {
                 return ((string)(this["Sandbox"]));
