@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<nlog xmlns="http://www.nlog-project.org/schemas/NLog.xsd"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.nlog-project.org/schemas/NLog.xsd NLog.xsd"
+      autoReload="true"
+      throwExceptions="false"
+      internalLogLevel="Off" internalLogFile="c:\temp\nlog-internal.log">
+
+  <!-- optional, add some variables
+  https://github.com/nlog/NLog/wiki/Configuration-file#variables
+  -->
+  <variable name="plaza" value="X"/>
+
+  <!--
+  See https://github.com/nlog/nlog/wiki/Configuration-file
+  for information on customizing logging rules and outputs.
+   -->
+  <targets>
+    <!--Lugares donde se guardará o enviará el mensaje-->
+    <target name="logToFile" xsi:type="File" fileName="Logs\${shortdate}_envio_sms.txt" layout="${date:format=yyyy-MM-dd HH\:mm\:ss}: ${message}"/>
+    <target name="logToError" xsi:type="File" fileName="Logs\${shortdate}_actualizacion_ecobro.txt" layout="${date:format=yyyy-MM-dd HH\:mm\:ss}: ${message}"/>
+
+    <target name="logToMail" xsi:type="Mail"
+            smtpServer="smtp.gmail.com"
+            smtpPort="587"
+            smtpAuthentication="Basic"
+            smtpUserName="mrspabsgdl@gmail.com"
+            smtpPassword="Mr$p4b$123"
+            enableSsl="true"
+            from="mrspabsgdl@gmail.com"
+            to="mrspabsgdl@gmail.com"
+            subject="Resultados envio SMS_MASIVOS"
+            body="${date:format=yyyy-MM-dd HH\:mm\:ss}: ${message}: ${exception:toString,Data:separator=\r\n}"
+    />
+
+  </targets>
+
+  <rules>
+    <!-- Reglas de funcionamiento del objeto Logger (ej. El nivel "Error" escribe al target "LogToError")-->
+
+    <logger name="*" level="Info" writeTo="logToFile" />
+    <logger name="*" level="Error" writeTo="logToError" />
+
+    <!--Cambiar a level="Error" para enviar correos al enviar un log de Error-->
+    <logger name="*" level="Fatal" writeTo="logToMail" />
+
+    <!--<logger name="*" level="Error" writeTo="logToMail" />-->
+
+  </rules>
+</nlog>

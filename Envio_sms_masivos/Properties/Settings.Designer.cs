@@ -25,7 +25,7 @@ namespace Envio_sms_masivos.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool Ejecucion_automatica {
             get {
                 return ((bool)(this["Ejecucion_automatica"]));

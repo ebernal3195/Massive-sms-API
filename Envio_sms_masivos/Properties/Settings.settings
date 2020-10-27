@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="Ejecucion_automatica" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">True</Value>
+      <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="WSConsultaCobros" Type="System.String" Scope="User">
       <Value Profile="(Default)">http://35.167.149.196/ecobro/controlpagos/getPendingPaymentsToSendSMS</Value>

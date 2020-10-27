@@ -37,3 +37,35 @@
 2020-10-27 11:59:29: Se termina proceso de envio
 ##############################################################
 
+2020-10-27 16:48:07: Se inicia programa
+2020-10-27 16:48:07: Se cargó la configuración
+2020-10-27 16:48:07: Comienza ejecución en modo automático
+2020-10-27 16:48:11: Comienza consulta de cobros
+2020-10-27 16:49:28: Se inicia programa
+2020-10-27 16:49:28: Se cargó la configuración
+2020-10-27 16:49:28: Comienza ejecución en modo automático
+2020-10-27 16:49:29: Comienza consulta de cobros
+2020-10-27 16:50:07: Se inicia programa
+2020-10-27 16:50:07: Se cargó la configuración
+2020-10-27 16:50:07: Comienza ejecución en modo automático
+2020-10-27 16:50:08: Comienza consulta de cobros
+2020-10-27 16:51:53: Se inicia programa
+2020-10-27 16:51:53: Se cargó la configuración
+2020-10-27 16:51:53: Comienza ejecución en modo automático
+2020-10-27 16:51:53: Comienza consulta de cobros
+2020-10-27 16:51:54: Cobros obtenidos: 94
+2020-10-27 16:51:54: Saldo disponible: 300007
+2020-10-27 16:51:56: 1. 4T,37326 -> Mensaje enviado a 3326481050: PABS: Hemos recibido su abono por $300.00 con folio 4T,37326 para el contrato 1CJ076862 con saldo $8,800.00 el día 27/10/2020 16:44 >>> Referencia del sms: 2010272515a9478f9d8sIMipOll6nui17SdvbDqp
+2020-10-27 16:51:57: 2. 4C,65581 -> Mensaje enviado a 3324957909: PABS: Hemos recibido su abono por $100.00 con folio 4C,65581 para el contrato 1CJ100809 con saldo $12,700.00 el día 27/10/2020 16:44 >>> Referencia del sms: 2010279864a285957ylw5kPSyQCpD4sDxbsfsEFu
+2020-10-27 16:51:57: 3. 2L122206 -> Mensaje enviado a 3317603617: PABS: Hemos recibido su abono por $100.00 con folio 2L122206 para el contrato 1AJ072310 con saldo $5,250.00 el día 27/10/2020 16:44 >>> Referencia del sms: 201027becbf5030fakwcd6O72FpgCXFa78lTAbEo
+2020-10-27 16:51:58: 4. 8M,37402 -> Mensaje enviado a 3316997024: PABS: Hemos recibido su abono por $50.00 con folio 8M,37402 para el contrato 1CF056164 con saldo $13,050.00 el día 27/10/2020 16:44 >>> Referencia del sms: 20102791ad59d6ec0PJg4wmoAKqNcT422Wh5wdyc
+2020-10-27 16:51:59: 5. 6L,31185 -> Mensaje enviado a 3316587946: PABS: Hemos recibido su abono por $100.00 con folio 6L,31185 para el contrato 2CJ015778 con saldo $16,800.00 el día 27/10/2020 16:44 >>> Referencia del sms: 201027b1bda632b5fVZH0EC8tIwkf8RmwmC7uoxj
+2020-10-27 16:52:02: Se inicia programa
+2020-10-27 16:52:02: Se cargó la configuración
+2020-10-27 16:52:02: Comienza ejecución en modo automático
+2020-10-27 16:52:02: Comienza consulta de cobros
+2020-10-27 16:54:29: Se inicia programa
+2020-10-27 16:54:29: Se cargó la configuración
+2020-10-27 16:54:29: Comienza ejecución en modo automático
+2020-10-27 16:54:29: Comienza consulta de cobros
+2020-10-27 16:55:56: Cobros obtenidos: 149

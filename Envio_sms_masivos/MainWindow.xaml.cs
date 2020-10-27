@@ -181,7 +181,7 @@ namespace Envio_sms_masivos
             {
                 Bitacora.Logger.Info("Comienza consulta de cobros");
 
-                DataTable TablaCobros = null;
+                DataTable TablaCobros = new DataTable();
                 //Insertar cobros obtenidos en una lista
                 Cobro _cobro;
 
@@ -200,8 +200,6 @@ namespace Envio_sms_masivos
                 json = json.Remove(fin_arreglo + 1, (json.Length - fin_arreglo - 1));
 
                 TablaCobros = JsonConvert.DeserializeObject<DataTable>(json);
-
-                TablaCobros = JsonConvert.DeserializeObject<DataTable>(response.Content);
 
                 if (TablaCobros.Rows == null)
                 {

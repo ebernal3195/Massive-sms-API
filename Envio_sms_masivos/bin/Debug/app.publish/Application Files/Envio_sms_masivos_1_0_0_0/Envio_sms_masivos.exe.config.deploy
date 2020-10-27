@@ -11,7 +11,7 @@
     <userSettings>
         <Envio_sms_masivos.Properties.Settings>
             <setting name="Ejecucion_automatica" serializeAs="String">
-                <value>False</value>
+                <value>True</value>
             </setting>
             <setting name="WSConsultaCobros" serializeAs="String">
                 <value>http://35.167.149.196/ecobro/controlpagos/getPendingPaymentsToSendSMS</value>
