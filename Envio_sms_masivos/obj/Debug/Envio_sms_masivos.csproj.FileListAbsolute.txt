@@ -47,3 +47,4 @@ D:\ProyectosGIT\Envio_sms_smsmasivos\Envio_sms_masivos\bin\Debug\Envio_sms_masiv
 D:\ProyectosGIT\Envio_sms_smsmasivos\Envio_sms_masivos\bin\Debug\Envio_sms_masivos.application
 D:\ProyectosGIT\Envio_sms_smsmasivos\Envio_sms_masivos\obj\Debug\Envio_sms_masivos.exe.manifest
 D:\ProyectosGIT\Envio_sms_smsmasivos\Envio_sms_masivos\obj\Debug\Envio_sms_masivos.application
+D:\ProyectosGIT\Envio_sms_smsmasivos\Envio_sms_masivos\obj\Debug\Envio_sms_masivos.csprojAssemblyReference.cache

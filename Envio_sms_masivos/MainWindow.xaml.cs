@@ -146,7 +146,7 @@ namespace Envio_sms_masivos
                 Sandbox = Properties.Settings.Default.Sandbox;
 
                 //Api key del portal smsmasivos de la cuenta proyectosit@pabsmr.org
-                Apikey = "5ea6af80de907ead6cf0d84c4be73c7c9fde2bda";
+                Apikey = Properties.Settings.Default.ApiKey;
 
                 Bitacora.Logger.Info("Se cargó la configuración");
                 return true;

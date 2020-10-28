@@ -99,7 +99,7 @@ namespace Envio_sms_masivos.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("PABS: Hemos recibido su abono por $|Monto| con folio |Recibo| para el contrato |C" +
-            "ontrato| con saldo $|Saldo-Monto| el día |Fecha_hora_evento|")]
+            "ontrato| con saldo $|Saldo-Monto| el dia |Fecha_hora_evento|")]
         public string Plantilla_mensaje {
             get {
                 return ((string)(this["Plantilla_mensaje"]));
@@ -130,6 +130,18 @@ namespace Envio_sms_masivos.Properties {
             }
             set {
                 this["Sandbox"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("5ea6af80de907ead6cf0d84c4be73c7c9fde2bda")]
+        public string ApiKey {
+            get {
+                return ((string)(this["ApiKey"]));
+            }
+            set {
+                this["ApiKey"] = value;
             }
         }
     }

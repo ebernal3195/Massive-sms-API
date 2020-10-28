@@ -21,13 +21,16 @@
       <Value Profile="(Default)">|Contrato|, |Saldo|, |Recibo|, |Monto|, |Cliente|, |Celular|, |Cobrador|, |Fecha_hora_evento|, |Estatus_cobro|, |No_cobro|, |Saldo-Monto|</Value>
     </Setting>
     <Setting Name="Plantilla_mensaje" Type="System.String" Scope="User">
-      <Value Profile="(Default)">PABS: Hemos recibido su abono por $|Monto| con folio |Recibo| para el contrato |Contrato| con saldo $|Saldo-Monto| el día |Fecha_hora_evento|</Value>
+      <Value Profile="(Default)">PABS: Hemos recibido su abono por $|Monto| con folio |Recibo| para el contrato |Contrato| con saldo $|Saldo-Monto| el dia |Fecha_hora_evento|</Value>
     </Setting>
     <Setting Name="SegundosSleepEnviarMensaje" Type="System.Decimal" Scope="User">
       <Value Profile="(Default)">0.1</Value>
     </Setting>
     <Setting Name="Sandbox" Type="System.String" Scope="User">
       <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="ApiKey" Type="System.String" Scope="User">
+      <Value Profile="(Default)">5ea6af80de907ead6cf0d84c4be73c7c9fde2bda</Value>
     </Setting>
   </Settings>
 </SettingsFile>
