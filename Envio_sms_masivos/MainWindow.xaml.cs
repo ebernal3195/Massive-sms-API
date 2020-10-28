@@ -195,15 +195,22 @@ namespace Envio_sms_masivos
                 //Adecuar Json de respuesta para serializarlo. Corta la cadena al nivel del los objetos [{ob1, obj2}]
                 string json = response.Content;
                 int inicio_arreglo = json.IndexOf("[");
-                json = json.Remove(0, inicio_arreglo);
                 int fin_arreglo = json.IndexOf("]");
-                json = json.Remove(fin_arreglo + 1, (json.Length - fin_arreglo - 1));
 
-                TablaCobros = JsonConvert.DeserializeObject<DataTable>(json);
-
-                if (TablaCobros.Rows == null)
+                //Manejar Json para cuando no haya cobros
+                if (fin_arreglo - inicio_arreglo >= 3)
                 {
-                    throw new Exception("No se obtuvieron cobros, revisar el web service");
+                    json = json.Remove(0, inicio_arreglo);
+
+                    fin_arreglo = json.IndexOf("]");
+                    json = json.Remove(fin_arreglo + 1, (json.Length - fin_arreglo - 1));
+
+                    TablaCobros = JsonConvert.DeserializeObject<DataTable>(json);
+
+                    if (TablaCobros.Rows == null)
+                    {
+                        throw new Exception("No se obtuvieron cobros, revisar el web service");
+                    }
                 }
 
                 //############################################################
@@ -620,13 +627,12 @@ namespace Envio_sms_masivos
 
                 if (response.Content.Contains(@"""success"":true") && response.Content.Contains(@"""code"":""sms_11"""))
                 {
-                    RespuestaExito respuesta = JsonConvert.DeserializeObject<RespuestaExito>(response.Content);
-
-                    _cobro.ResultadoEnvio = "3";
-                    _cobro.DescripciónResultado = "Mensaje enviado";
-
                     try
                     {
+                        _cobro.ResultadoEnvio = "3";
+                        _cobro.DescripciónResultado = "Mensaje enviado";
+
+                        RespuestaExito respuesta = JsonConvert.DeserializeObject<RespuestaExito>(response.Content);
                         _cobro.referencia = respuesta.references[0].reference;
                     }
                     catch (Exception ex)
@@ -818,7 +824,7 @@ namespace Envio_sms_masivos
                 else
                 {
                     Bitacora.Logger.Error($"{_cobro.Indice}. {_cobro.Recibo} -> Fallido");
-                    Bitacora.Logger.Fatal($"{_cobro.Indice}. {_cobro.Recibo} -> Fallido");
+                    Bitacora.Logger.Fatal($"{_cobro.Indice}. {_cobro.Recibo} -> No se pudo actualizar el estatus a eCobro: " + response.Content);
                     return false;
                 }
             }
