@@ -27,7 +27,7 @@
       <Value Profile="(Default)">0.1</Value>
     </Setting>
     <Setting Name="Sandbox" Type="System.String" Scope="User">
-      <Value Profile="(Default)">0</Value>
+      <Value Profile="(Default)">1</Value>
     </Setting>
     <Setting Name="ApiKey" Type="System.String" Scope="User">
       <Value Profile="(Default)">5ea6af80de907ead6cf0d84c4be73c7c9fde2bda</Value>

@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Envio_sms_masivos.exe" size="33280">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Envio_sms_masivos.exe" size="33792">
       <assemblyIdentity name="Envio_sms_masivos" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>yp2zkskPneY2bOBtwPrMso2UEGx21sLb8frZWemdFnY=</dsig:DigestValue>
+        <dsig:DigestValue>er7O4WMm6g/E4jDLsmkaAelH+BjrMGXJbgntmRFYeXs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -95,7 +95,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>mtXwwphzm+wfK/zT6eTuzxq6X5QwgRIo227TvUZQzBw=</dsig:DigestValue>
+      <dsig:DigestValue>CjOd5iZ1tk8Dz40wiVSoRFSSCzSklb7tSD/VoSW3p1Y=</dsig:DigestValue>
     </hash>
   </file>
   <file name="NLog.config" size="2018">

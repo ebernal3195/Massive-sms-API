@@ -1,0 +1,3 @@
+2020-10-29 11:33:12: Comienza revisión de lista
+2020-10-29 11:33:33: 1. 1L,40295 -> Actualizado -> 3 - Mensaje enviado
+2020-10-29 11:33:34: 2. 14C4055 -> Actualizado -> 8 - Número con formato incorrecto

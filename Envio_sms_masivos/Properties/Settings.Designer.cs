@@ -123,7 +123,7 @@ namespace Envio_sms_masivos.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public string Sandbox {
             get {
                 return ((string)(this["Sandbox"]));
