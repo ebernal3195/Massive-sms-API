@@ -1,0 +1,975 @@
+2020-11-02 13:54:28: Se inicia programa
+2020-11-02 13:54:28: Se cargó la configuración
+2020-11-02 13:54:28: Comienza ejecución en modo no automático
+2020-11-02 13:54:58: Comienza consulta de cobros
+2020-11-02 13:55:03: Cobros obtenidos: 1000
+2020-11-02 13:55:03: Saldo disponible: 263878
+2020-11-02 13:55:03: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:55:03: 1. 9T,29750 -> 3315722175
+2020-11-02 13:55:03: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $100.00 con folio 9T,29750 para el contrato 2CJ007979 con saldo $16,550.00 el dia 29/10/2020 11:10",
+	"numbers":"3315722175",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:55:04: Mensaje enviado: PABS: Hemos recibido su abono por $100.00 con folio 9T,29750 para el contrato 2CJ007979 con saldo $16,550.00 el dia 29/10/2020 11:10
+2020-11-02 13:55:04: Referencia: 201102ec456000e8eQXCnDDBvw6qQPMaX1ygUQZ1
+2020-11-02 13:55:04: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:55:04: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:55:05: 2. 12H,48909 -> 3339540675
+2020-11-02 13:55:05: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $150.00 con folio 12H,48909 para el contrato 2CJ041124 con saldo $22,600.00 el dia 30/10/2020 22:05",
+	"numbers":"3339540675",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:55:06: Mensaje enviado: PABS: Hemos recibido su abono por $150.00 con folio 12H,48909 para el contrato 2CJ041124 con saldo $22,600.00 el dia 30/10/2020 22:05
+2020-11-02 13:55:06: Referencia: 20110220f17fcb0ffBa2QhfFh1ZKoAqkBY3M0LGX
+2020-11-02 13:55:06: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:55:06: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:55:07: 3. AP,31253 -> 3336190060
+2020-11-02 13:55:07: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $400.00 con folio AP,31253 para el contrato 1CJ085548 con saldo $5,300.00 el dia 31/10/2020 22:26",
+	"numbers":"3336190060",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:55:08: Mensaje enviado: PABS: Hemos recibido su abono por $400.00 con folio AP,31253 para el contrato 1CJ085548 con saldo $5,300.00 el dia 31/10/2020 22:26
+2020-11-02 13:55:08: Referencia: 201102078ad09fe8ea7NtKkWOhUz78gn9YmZVVfs
+2020-11-02 13:55:08: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:55:08: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:55:09: 4. 4G101071 -> 3314527534
+2020-11-02 13:55:09: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $400.00 con folio 4G101071 para el contrato 1AJ090960 con saldo $9,400.00 el dia 02/11/2020 09:37",
+	"numbers":"3314527534",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:55:10: Mensaje enviado: PABS: Hemos recibido su abono por $400.00 con folio 4G101071 para el contrato 1AJ090960 con saldo $9,400.00 el dia 02/11/2020 09:37
+2020-11-02 13:55:10: Referencia: 20110216a78489adenehfspCfYfr428nAJmKttjC
+2020-11-02 13:55:10: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:55:10: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:55:11: 5. 4G101072 -> 3314527534
+2020-11-02 13:55:11: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $400.00 con folio 4G101072 para el contrato 1AJ093265 con saldo $10,100.00 el dia 02/11/2020 09:37",
+	"numbers":"3314527534",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:55:12: Mensaje enviado: PABS: Hemos recibido su abono por $400.00 con folio 4G101072 para el contrato 1AJ093265 con saldo $10,100.00 el dia 02/11/2020 09:37
+2020-11-02 13:55:12: Referencia: 2011027f90df38cf9gkfFc2LxsecWN8dSPJqEDhq
+2020-11-02 13:55:12: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:55:12: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:55:13: 6. 13C8187 -> 3336704722
+2020-11-02 13:55:13: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $100.00 con folio 13C8187 para el contrato 2AF013787 con saldo $18,200.00 el dia 02/11/2020 10:11",
+	"numbers":"3336704722",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:55:33: Error al deserializar respuesta negativa: Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   en Newtonsoft.Json.JsonTextReader.ParseValue()
+   en Newtonsoft.Json.JsonTextReader.Read()
+   en Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   en Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   en Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   en Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   en Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   en Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   en Envio_sms_masivos.MainWindow.EnviarSMSconWS(String _telefono, String _mensaje, Cobro _cobro) en D:\ProyectosGIT\Envio_sms_smsmasivos\Envio_sms_masivos\MainWindow.xaml.cs:línea 674
+2020-11-02 13:55:33: Respuesta recibida: 
+<html><body><h1>503 Service Unavailable</h1>
+No server is available to handle this request.
+</body></html>
+
+2020-11-02 13:55:33: Mensaje no enviado: Error del servidor. Se reintentará después. - 0 - server
+2020-11-02 13:55:33: Se añade cobro a lista de actualizacion con estatus 0
+2020-11-02 13:55:33: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:55:34: 7. 13C8188 -> 3336704722
+2020-11-02 13:55:34: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $100.00 con folio 13C8188 para el contrato 2AF014061 con saldo $16,425.00 el dia 02/11/2020 10:11",
+	"numbers":"3336704722",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:55:35: Mensaje enviado: PABS: Hemos recibido su abono por $100.00 con folio 13C8188 para el contrato 2AF014061 con saldo $16,425.00 el dia 02/11/2020 10:11
+2020-11-02 13:55:35: Referencia: 2011021e588135647baW3sJ1h700kzdBwxSE9pzq
+2020-11-02 13:55:35: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:55:35: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:55:36: 8. 13C8189 -> 3335630116
+2020-11-02 13:55:36: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $100.00 con folio 13C8189 para el contrato 1AJ100694 con saldo $9,500.00 el dia 02/11/2020 10:14",
+	"numbers":"3335630116",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:55:36: Mensaje enviado: PABS: Hemos recibido su abono por $100.00 con folio 13C8189 para el contrato 1AJ100694 con saldo $9,500.00 el dia 02/11/2020 10:14
+2020-11-02 13:55:36: Referencia: 20110264e18ed3777E52dG40yiMbkh4Zc0fpdS1h
+2020-11-02 13:55:36: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:55:36: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:55:37: 9. 13C8190 -> 3335630116
+2020-11-02 13:55:37: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $100.00 con folio 13C8190 para el contrato 1AJ100766 con saldo $9,500.00 el dia 02/11/2020 10:14",
+	"numbers":"3335630116",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:55:38: Mensaje enviado: PABS: Hemos recibido su abono por $100.00 con folio 13C8190 para el contrato 1AJ100766 con saldo $9,500.00 el dia 02/11/2020 10:14
+2020-11-02 13:55:38: Referencia: 201102160c2c9f1571fOaCso47WgsaosYeprPhK7
+2020-11-02 13:55:38: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:55:38: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:55:39: 10. 13C,8428 -> 3318084780
+2020-11-02 13:55:39: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $75.00 con folio 13C,8428 para el contrato 1CF045971 con saldo $7,450.00 el dia 02/11/2020 10:15",
+	"numbers":"3318084780",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:55:46: Mensaje enviado: PABS: Hemos recibido su abono por $75.00 con folio 13C,8428 para el contrato 1CF045971 con saldo $7,450.00 el dia 02/11/2020 10:15
+2020-11-02 13:55:46: Referencia: 2011023680c2a48ccnzHfSLClOW5nH2mWFTBPxDq
+2020-11-02 13:55:46: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:55:46: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:55:47: 11. 13C,8429 -> 3334759150
+2020-11-02 13:55:47: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $75.00 con folio 13C,8429 para el contrato 1CJ049026 con saldo $4,575.00 el dia 02/11/2020 10:19",
+	"numbers":"3334759150",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:55:48: Mensaje enviado: PABS: Hemos recibido su abono por $75.00 con folio 13C,8429 para el contrato 1CJ049026 con saldo $4,575.00 el dia 02/11/2020 10:19
+2020-11-02 13:55:48: Referencia: 20110212c8b6c68a0rQv9GieFB3rKqSDvqMED6aJ
+2020-11-02 13:55:48: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:55:48: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:55:49: 12. 13C,8430 -> 3336700966
+2020-11-02 13:55:49: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $500.00 con folio 13C,8430 para el contrato 1CJ083878 con saldo $6,800.00 el dia 02/11/2020 10:22",
+	"numbers":"3336700966",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:55:50: Mensaje enviado: PABS: Hemos recibido su abono por $500.00 con folio 13C,8430 para el contrato 1CJ083878 con saldo $6,800.00 el dia 02/11/2020 10:22
+2020-11-02 13:55:50: Referencia: 2011021845191c896sExPMMhX2hGtRA3bFUZKPe8
+2020-11-02 13:55:50: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:55:50: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:55:51: 13. 15G829 -> 3310049985
+2020-11-02 13:55:51: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $50.00 con folio 15G829 para el contrato 1AJ087047 con saldo $12,100.00 el dia 02/11/2020 10:22",
+	"numbers":"3310049985",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:55:52: Mensaje enviado: PABS: Hemos recibido su abono por $50.00 con folio 15G829 para el contrato 1AJ087047 con saldo $12,100.00 el dia 02/11/2020 10:22
+2020-11-02 13:55:52: Referencia: 2011022e24d169ad89vPgVFq5NKh9Vkwhtk2n2Ph
+2020-11-02 13:55:52: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:55:52: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:55:53: 14. 13C8191 -> 3325965282
+2020-11-02 13:55:53: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $100.00 con folio 13C8191 para el contrato 2AJ016037 con saldo $16,000.00 el dia 02/11/2020 10:23",
+	"numbers":"3325965282",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:55:54: Mensaje enviado: PABS: Hemos recibido su abono por $100.00 con folio 13C8191 para el contrato 2AJ016037 con saldo $16,000.00 el dia 02/11/2020 10:23
+2020-11-02 13:55:54: Referencia: 201102edefd418e3fRFcpSsvtwfoyxWGkuWP4kxK
+2020-11-02 13:55:54: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:55:54: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:55:55: 15. 9U,26676 -> 3312298967
+2020-11-02 13:55:55: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $300.00 con folio 9U,26676 para el contrato 1CJ066275 con saldo $4,900.00 el dia 02/11/2020 10:23",
+	"numbers":"3312298967",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:55:56: Mensaje enviado: PABS: Hemos recibido su abono por $300.00 con folio 9U,26676 para el contrato 1CJ066275 con saldo $4,900.00 el dia 02/11/2020 10:23
+2020-11-02 13:55:56: Referencia: 2011020b8841d8606pvRA4F3KMVhUEGcJGear5yD
+2020-11-02 13:55:56: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:55:56: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:55:57: 16. 9U27839 -> 3331036071
+2020-11-02 13:55:57: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $200.00 con folio 9U27839 para el contrato 1AJ085001 con saldo $5,700.00 el dia 02/11/2020 10:25",
+	"numbers":"3331036071",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:56:17: Error al deserializar respuesta negativa: Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   en Newtonsoft.Json.JsonTextReader.ParseValue()
+   en Newtonsoft.Json.JsonTextReader.Read()
+   en Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   en Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   en Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   en Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   en Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   en Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   en Envio_sms_masivos.MainWindow.EnviarSMSconWS(String _telefono, String _mensaje, Cobro _cobro) en D:\ProyectosGIT\Envio_sms_smsmasivos\Envio_sms_masivos\MainWindow.xaml.cs:línea 674
+2020-11-02 13:56:17: Respuesta recibida: 
+<html><body><h1>503 Service Unavailable</h1>
+No server is available to handle this request.
+</body></html>
+
+2020-11-02 13:56:17: Mensaje no enviado: Error del servidor. Se reintentará después. - 0 - server
+2020-11-02 13:56:18: Se añade cobro a lista de actualizacion con estatus 0
+2020-11-02 13:56:18: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:56:19: 17. 13C,8431 -> 3322274499
+2020-11-02 13:56:19: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $75.00 con folio 13C,8431 para el contrato 2CJ027362 con saldo $21,925.00 el dia 02/11/2020 10:28",
+	"numbers":"3322274499",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:56:39: Error al deserializar respuesta negativa: Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   en Newtonsoft.Json.JsonTextReader.ParseValue()
+   en Newtonsoft.Json.JsonTextReader.Read()
+   en Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   en Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   en Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   en Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   en Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   en Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   en Envio_sms_masivos.MainWindow.EnviarSMSconWS(String _telefono, String _mensaje, Cobro _cobro) en D:\ProyectosGIT\Envio_sms_smsmasivos\Envio_sms_masivos\MainWindow.xaml.cs:línea 674
+2020-11-02 13:56:39: Respuesta recibida: 
+<html><body><h1>503 Service Unavailable</h1>
+No server is available to handle this request.
+</body></html>
+
+2020-11-02 13:56:39: Mensaje no enviado: Error del servidor. Se reintentará después. - 0 - server
+2020-11-02 13:56:39: Se añade cobro a lista de actualizacion con estatus 0
+2020-11-02 13:56:39: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:56:40: 18. 13C,8432 -> 3322281288
+2020-11-02 13:56:40: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $75.00 con folio 13C,8432 para el contrato 2CJ027356 con saldo $21,100.00 el dia 02/11/2020 10:28",
+	"numbers":"3322281288",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:57:00: Error al deserializar respuesta negativa: Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   en Newtonsoft.Json.JsonTextReader.ParseValue()
+   en Newtonsoft.Json.JsonTextReader.Read()
+   en Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   en Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   en Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   en Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   en Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   en Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   en Envio_sms_masivos.MainWindow.EnviarSMSconWS(String _telefono, String _mensaje, Cobro _cobro) en D:\ProyectosGIT\Envio_sms_smsmasivos\Envio_sms_masivos\MainWindow.xaml.cs:línea 674
+2020-11-02 13:57:00: Respuesta recibida: 
+<html><body><h1>503 Service Unavailable</h1>
+No server is available to handle this request.
+</body></html>
+
+2020-11-02 13:57:00: Mensaje no enviado: Error del servidor. Se reintentará después. - 0 - server
+2020-11-02 13:57:00: Se añade cobro a lista de actualizacion con estatus 0
+2020-11-02 13:57:00: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:57:01: 19. 13C,8433 -> 3331185467
+2020-11-02 13:57:01: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $75.00 con folio 13C,8433 para el contrato 1CJ047600 con saldo $4,675.00 el dia 02/11/2020 10:28",
+	"numbers":"3331185467",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:57:02: Mensaje enviado: PABS: Hemos recibido su abono por $75.00 con folio 13C,8433 para el contrato 1CJ047600 con saldo $4,675.00 el dia 02/11/2020 10:28
+2020-11-02 13:57:02: Referencia: 201102ae284490d4f4EA19gMftvnFl3xmoveU9F0
+2020-11-02 13:57:02: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:57:02: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:57:03: 20. 13C,8434 -> 3331185467
+2020-11-02 13:57:03: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $75.00 con folio 13C,8434 para el contrato 1CJ047603 con saldo $2,250.00 el dia 02/11/2020 10:28",
+	"numbers":"3331185467",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:57:04: Mensaje enviado: PABS: Hemos recibido su abono por $75.00 con folio 13C,8434 para el contrato 1CJ047603 con saldo $2,250.00 el dia 02/11/2020 10:28
+2020-11-02 13:57:04: Referencia: 201102708edf7d0b3VSTrO97DIr6ycYZKMrb65H2
+2020-11-02 13:57:04: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:57:04: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:57:05: 21. 13C,8435 -> 3331185467
+2020-11-02 13:57:05: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $75.00 con folio 13C,8435 para el contrato 1CJ047605 con saldo $4,450.00 el dia 02/11/2020 10:28",
+	"numbers":"3331185467",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:57:06: Mensaje enviado: PABS: Hemos recibido su abono por $75.00 con folio 13C,8435 para el contrato 1CJ047605 con saldo $4,450.00 el dia 02/11/2020 10:28
+2020-11-02 13:57:06: Referencia: 201102bec2177d043g3zUbBr1ro3GrQryvH2Ngad
+2020-11-02 13:57:06: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:57:06: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:57:07: 22. 15G,1781 -> 3317464248
+2020-11-02 13:57:07: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $100.00 con folio 15G,1781 para el contrato 2CJ039303 con saldo $17,800.00 el dia 02/11/2020 10:29",
+	"numbers":"3317464248",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:57:08: Mensaje enviado: PABS: Hemos recibido su abono por $100.00 con folio 15G,1781 para el contrato 2CJ039303 con saldo $17,800.00 el dia 02/11/2020 10:29
+2020-11-02 13:57:08: Referencia: 201102be8b4d7678cp0BwDbVPQ6bdXfsyHrQDMDA
+2020-11-02 13:57:08: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:57:08: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:57:09: 23. 2Z103557 -> 3313029638
+2020-11-02 13:57:09: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $100.00 con folio 2Z103557 para el contrato 1AF034476 con saldo $2,850.00 el dia 02/11/2020 10:29",
+	"numbers":"3313029638",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:57:29: Error al deserializar respuesta negativa: Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   en Newtonsoft.Json.JsonTextReader.ParseValue()
+   en Newtonsoft.Json.JsonTextReader.Read()
+   en Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   en Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   en Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   en Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   en Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   en Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   en Envio_sms_masivos.MainWindow.EnviarSMSconWS(String _telefono, String _mensaje, Cobro _cobro) en D:\ProyectosGIT\Envio_sms_smsmasivos\Envio_sms_masivos\MainWindow.xaml.cs:línea 674
+2020-11-02 13:57:29: Respuesta recibida: 
+<html><body><h1>503 Service Unavailable</h1>
+No server is available to handle this request.
+</body></html>
+
+2020-11-02 13:57:29: Mensaje no enviado: Error del servidor. Se reintentará después. - 0 - server
+2020-11-02 13:57:29: Se añade cobro a lista de actualizacion con estatus 0
+2020-11-02 13:57:29: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:57:30: 24. 1C179840 -> 3322145870
+2020-11-02 13:57:30: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $100.00 con folio 1C179840 para el contrato 2AJ031968 con saldo $21,600.00 el dia 02/11/2020 10:30",
+	"numbers":"3322145870",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:57:31: Mensaje enviado: PABS: Hemos recibido su abono por $100.00 con folio 1C179840 para el contrato 2AJ031968 con saldo $21,600.00 el dia 02/11/2020 10:30
+2020-11-02 13:57:31: Referencia: 2011024a40449422fhmdNlBlwcWJmuL1SOd40pRo
+2020-11-02 13:57:31: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:57:31: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:57:32: 25. 2Z103558 -> 3323416384
+2020-11-02 13:57:32: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $100.00 con folio 2Z103558 para el contrato 1AF034242 con saldo $2,800.00 el dia 02/11/2020 10:30",
+	"numbers":"3323416384",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:57:32: Mensaje enviado: PABS: Hemos recibido su abono por $100.00 con folio 2Z103558 para el contrato 1AF034242 con saldo $2,800.00 el dia 02/11/2020 10:30
+2020-11-02 13:57:32: Referencia: 20110282f731cbd75aGeZazBV1tOEXVsBtEuxloM
+2020-11-02 13:57:32: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:57:32: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:57:33: 26. 13C8192 -> 3336705217
+2020-11-02 13:57:33: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $150.00 con folio 13C8192 para el contrato 2AJ009288 con saldo $16,700.00 el dia 02/11/2020 10:30",
+	"numbers":"3336705217",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:57:34: Mensaje enviado: PABS: Hemos recibido su abono por $150.00 con folio 13C8192 para el contrato 2AJ009288 con saldo $16,700.00 el dia 02/11/2020 10:30
+2020-11-02 13:57:34: Referencia: 201102c949c8bdf06SdVtApWPfKjARjhUMwQ7dYl
+2020-11-02 13:57:34: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:57:34: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:57:35: 27. 2S100346 -> 3336330389
+2020-11-02 13:57:35: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $50.00 con folio 2S100346 para el contrato 2AF010383 con saldo $16,950.00 el dia 02/11/2020 10:31",
+	"numbers":"3336330389",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:57:56: Error al deserializar respuesta negativa: Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   en Newtonsoft.Json.JsonTextReader.ParseValue()
+   en Newtonsoft.Json.JsonTextReader.Read()
+   en Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   en Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   en Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   en Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   en Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   en Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   en Envio_sms_masivos.MainWindow.EnviarSMSconWS(String _telefono, String _mensaje, Cobro _cobro) en D:\ProyectosGIT\Envio_sms_smsmasivos\Envio_sms_masivos\MainWindow.xaml.cs:línea 674
+2020-11-02 13:57:56: Respuesta recibida: 
+<html><body><h1>503 Service Unavailable</h1>
+No server is available to handle this request.
+</body></html>
+
+2020-11-02 13:57:56: Mensaje no enviado: Error del servidor. Se reintentará después. - 0 - server
+2020-11-02 13:57:56: Se añade cobro a lista de actualizacion con estatus 0
+2020-11-02 13:57:56: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:57:57: 28. 2S100347 -> 3336330389
+2020-11-02 13:57:57: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $50.00 con folio 2S100347 para el contrato 2AF010476 con saldo $16,950.00 el dia 02/11/2020 10:31",
+	"numbers":"3336330389",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:57:57: Mensaje enviado: PABS: Hemos recibido su abono por $50.00 con folio 2S100347 para el contrato 2AF010476 con saldo $16,950.00 el dia 02/11/2020 10:31
+2020-11-02 13:57:57: Referencia: 201102f70ed3d44a88xb75zoSb4MfCf6FCAjhmE5
+2020-11-02 13:57:57: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:57:57: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:57:58: 29. 10Z15055 -> 3312436399
+2020-11-02 13:57:58: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $50.00 con folio 10Z15055 para el contrato 1AG006914 con saldo $3,300.00 el dia 02/11/2020 10:31",
+	"numbers":"3312436399",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:58:00: Mensaje enviado: PABS: Hemos recibido su abono por $50.00 con folio 10Z15055 para el contrato 1AG006914 con saldo $3,300.00 el dia 02/11/2020 10:31
+2020-11-02 13:58:00: Referencia: 201102b68f2553613GtupD6YgAoZ0hlC8xEt2g4Q
+2020-11-02 13:58:00: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:58:00: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:58:01: 30. 2Z,77833 -> 3310917184
+2020-11-02 13:58:01: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $50.00 con folio 2Z,77833 para el contrato 1CF038500 con saldo $8,850.00 el dia 02/11/2020 10:31",
+	"numbers":"3310917184",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:58:02: Mensaje enviado: PABS: Hemos recibido su abono por $50.00 con folio 2Z,77833 para el contrato 1CF038500 con saldo $8,850.00 el dia 02/11/2020 10:31
+2020-11-02 13:58:02: Referencia: 20110226f27c6bdb1HQwoJLuJXtlz37Mm3arKdRO
+2020-11-02 13:58:02: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:58:02: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:58:03: 31. 10Z15056 -> 3320541861
+2020-11-02 13:58:03: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $100.00 con folio 10Z15056 para el contrato 1AJ092355 con saldo $9,650.00 el dia 02/11/2020 10:32",
+	"numbers":"3320541861",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:58:04: Mensaje enviado: PABS: Hemos recibido su abono por $100.00 con folio 10Z15056 para el contrato 1AJ092355 con saldo $9,650.00 el dia 02/11/2020 10:32
+2020-11-02 13:58:04: Referencia: 2011029317e8a73bbqKohHSDuFPLy45wG0ws7q2v
+2020-11-02 13:58:04: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:58:04: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:58:05: 32. 13C,8436 -> 3318063947
+2020-11-02 13:58:05: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $200.00 con folio 13C,8436 para el contrato 1CJ060151 con saldo $4,350.00 el dia 02/11/2020 10:32",
+	"numbers":"3318063947",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:58:06: Mensaje enviado: PABS: Hemos recibido su abono por $200.00 con folio 13C,8436 para el contrato 1CJ060151 con saldo $4,350.00 el dia 02/11/2020 10:32
+2020-11-02 13:58:06: Referencia: 20110213c0f4d1d11TdyrdRlSLvTaiBZNDwgAeJJ
+2020-11-02 13:58:06: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:58:06: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:58:07: 33. 8X,25761 -> 3320519559
+2020-11-02 13:58:07: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $200.00 con folio 8X,25761 para el contrato 2CF016795 con saldo $19,450.00 el dia 02/11/2020 10:33",
+	"numbers":"3320519559",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:58:07: Mensaje enviado: PABS: Hemos recibido su abono por $200.00 con folio 8X,25761 para el contrato 2CF016795 con saldo $19,450.00 el dia 02/11/2020 10:33
+2020-11-02 13:58:07: Referencia: 201102fc3113c6adauPKYkQcyK0aX3SNZxxsq7zV
+2020-11-02 13:58:07: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:58:07: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:58:08: 34. 2S,45903 -> 3323861934
+2020-11-02 13:58:08: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $100.00 con folio 2S,45903 para el contrato 2CJ027419 con saldo $20,900.00 el dia 02/11/2020 10:33",
+	"numbers":"3323861934",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:58:09: Mensaje enviado: PABS: Hemos recibido su abono por $100.00 con folio 2S,45903 para el contrato 2CJ027419 con saldo $20,900.00 el dia 02/11/2020 10:33
+2020-11-02 13:58:09: Referencia: 201102656139b0b15GghAyx8qwovYxGNJYsthQ9K
+2020-11-02 13:58:09: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:58:09: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:58:10: 35. 10Z15057 -> 3315955104
+2020-11-02 13:58:10: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $100.00 con folio 10Z15057 para el contrato 1AF006464 con saldo $3,500.00 el dia 02/11/2020 10:34",
+	"numbers":"3315955104",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:58:11: Mensaje enviado: PABS: Hemos recibido su abono por $100.00 con folio 10Z15057 para el contrato 1AF006464 con saldo $3,500.00 el dia 02/11/2020 10:34
+2020-11-02 13:58:11: Referencia: 201102bcf3ca4d36e7PwAyqAUIhup8zgUMLZAd3e
+2020-11-02 13:58:11: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:58:11: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:58:12: 36. 10Z15058 -> 3315955104
+2020-11-02 13:58:12: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $100.00 con folio 10Z15058 para el contrato 1AF006465 con saldo $3,900.00 el dia 02/11/2020 10:34",
+	"numbers":"3315955104",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:58:13: Mensaje enviado: PABS: Hemos recibido su abono por $100.00 con folio 10Z15058 para el contrato 1AF006465 con saldo $3,900.00 el dia 02/11/2020 10:34
+2020-11-02 13:58:13: Referencia: 2011020216d19a4f3KncI19wHn1GeeoLXq2PSUcs
+2020-11-02 13:58:13: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:58:13: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:58:14: 37. 2Z103559 -> 3331410124
+2020-11-02 13:58:14: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $100.00 con folio 2Z103559 para el contrato 1BF002059 con saldo $1,700.00 el dia 02/11/2020 10:34",
+	"numbers":"3331410124",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:58:34: Error al deserializar respuesta negativa: Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   en Newtonsoft.Json.JsonTextReader.ParseValue()
+   en Newtonsoft.Json.JsonTextReader.Read()
+   en Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   en Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   en Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   en Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   en Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   en Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   en Envio_sms_masivos.MainWindow.EnviarSMSconWS(String _telefono, String _mensaje, Cobro _cobro) en D:\ProyectosGIT\Envio_sms_smsmasivos\Envio_sms_masivos\MainWindow.xaml.cs:línea 674
+2020-11-02 13:58:34: Respuesta recibida: 
+<html><body><h1>503 Service Unavailable</h1>
+No server is available to handle this request.
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"5ec06de21dfab2e4","version":"2020.9.1","si":10}'></script>
+</body></html>
+
+2020-11-02 13:58:34: Mensaje no enviado: Error del servidor. Se reintentará después. - 0 - server
+2020-11-02 13:58:34: Se añade cobro a lista de actualizacion con estatus 0
+2020-11-02 13:58:34: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:58:35: 38. 13I,4811 -> 3316415216
+2020-11-02 13:58:35: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $100.00 con folio 13I,4811 para el contrato 1CJ084673 con saldo $4,500.00 el dia 02/11/2020 10:35",
+	"numbers":"3316415216",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:58:36: Mensaje enviado: PABS: Hemos recibido su abono por $100.00 con folio 13I,4811 para el contrato 1CJ084673 con saldo $4,500.00 el dia 02/11/2020 10:35
+2020-11-02 13:58:36: Referencia: 201102069a3cb8c24CBKs8C30TUOn5KWoYZGvQFU
+2020-11-02 13:58:36: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:58:36: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:58:37: 39. 10Z,16613 -> 3315325450
+2020-11-02 13:58:37: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $100.00 con folio 10Z,16613 para el contrato 2CF007130 con saldo $13,600.00 el dia 02/11/2020 10:36",
+	"numbers":"3315325450",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:58:38: Mensaje enviado: PABS: Hemos recibido su abono por $100.00 con folio 10Z,16613 para el contrato 2CF007130 con saldo $13,600.00 el dia 02/11/2020 10:36
+2020-11-02 13:58:38: Referencia: 2011024428c56a20dL2e8saeRS61pzsW2mpzaj2p
+2020-11-02 13:58:38: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:58:38: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:58:39: 40. 13C,8437 -> 3314681866
+2020-11-02 13:58:39: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $100.00 con folio 13C,8437 para el contrato 1CH001012 con saldo $800.00 el dia 02/11/2020 10:36",
+	"numbers":"3314681866",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:58:59: Error al deserializar respuesta negativa: Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   en Newtonsoft.Json.JsonTextReader.ParseValue()
+   en Newtonsoft.Json.JsonTextReader.Read()
+   en Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   en Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   en Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   en Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   en Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   en Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   en Envio_sms_masivos.MainWindow.EnviarSMSconWS(String _telefono, String _mensaje, Cobro _cobro) en D:\ProyectosGIT\Envio_sms_smsmasivos\Envio_sms_masivos\MainWindow.xaml.cs:línea 674
+2020-11-02 13:58:59: Respuesta recibida: 
+<html><body><h1>503 Service Unavailable</h1>
+No server is available to handle this request.
+</body></html>
+
+2020-11-02 13:58:59: Mensaje no enviado: Error del servidor. Se reintentará después. - 0 - server
+2020-11-02 13:58:59: Se añade cobro a lista de actualizacion con estatus 0
+2020-11-02 13:58:59: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:59:00: 41. 13I,4812 -> 3322004276
+2020-11-02 13:59:00: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $100.00 con folio 13I,4812 para el contrato 1CJ080324 con saldo $2,600.00 el dia 02/11/2020 10:36",
+	"numbers":"3322004276",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:59:02: Mensaje enviado: PABS: Hemos recibido su abono por $100.00 con folio 13I,4812 para el contrato 1CJ080324 con saldo $2,600.00 el dia 02/11/2020 10:36
+2020-11-02 13:59:02: Referencia: 201102966052760636jm8t0pGTcpg9IJ52CjKFnt
+2020-11-02 13:59:02: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:59:02: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:59:03: 42. 13C,8438 -> 3312565652
+2020-11-02 13:59:03: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $100.00 con folio 13C,8438 para el contrato 1CJ070013 con saldo $5,075.00 el dia 02/11/2020 10:37",
+	"numbers":"3312565652",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:59:04: Mensaje enviado: PABS: Hemos recibido su abono por $100.00 con folio 13C,8438 para el contrato 1CJ070013 con saldo $5,075.00 el dia 02/11/2020 10:37
+2020-11-02 13:59:04: Referencia: 2011023f1ad2fd4472CMiLKWVnV1ynohTeAtNkdR
+2020-11-02 13:59:04: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:59:04: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:59:05: 43. 2Z,77834 -> 3334435963
+2020-11-02 13:59:05: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $100.00 con folio 2Z,77834 para el contrato 1CF045155 con saldo $7,400.00 el dia 02/11/2020 10:37",
+	"numbers":"3334435963",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:59:06: Mensaje enviado: PABS: Hemos recibido su abono por $100.00 con folio 2Z,77834 para el contrato 1CF045155 con saldo $7,400.00 el dia 02/11/2020 10:37
+2020-11-02 13:59:06: Referencia: 201102911de51db02aX5DouGQ1AN6rGEqP0Sawsz
+2020-11-02 13:59:06: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:59:06: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:59:07: 44. 5K88415 -> 3331077816
+2020-11-02 13:59:07: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $200.00 con folio 5K88415 para el contrato 1AG009397 con saldo $7,700.00 el dia 02/11/2020 10:39",
+	"numbers":"3331077816",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:59:08: Mensaje enviado: PABS: Hemos recibido su abono por $200.00 con folio 5K88415 para el contrato 1AG009397 con saldo $7,700.00 el dia 02/11/2020 10:39
+2020-11-02 13:59:08: Referencia: 2011023fd456e4149MYuKVYWzYehWSYURE6joO5o
+2020-11-02 13:59:08: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:59:08: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:59:09: 45. 10Z,16614 -> 3312940604
+2020-11-02 13:59:09: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $100.00 con folio 10Z,16614 para el contrato 1CJ035589 con saldo $2,300.00 el dia 02/11/2020 10:39",
+	"numbers":"3312940604",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:59:09: Mensaje enviado: PABS: Hemos recibido su abono por $100.00 con folio 10Z,16614 para el contrato 1CJ035589 con saldo $2,300.00 el dia 02/11/2020 10:39
+2020-11-02 13:59:09: Referencia: 201102dc7f6a8a63cZzgA9IbLVXW3SAij2tuba1I
+2020-11-02 13:59:09: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:59:09: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:59:10: 46. 2N142027 -> 3314469136
+2020-11-02 13:59:10: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $200.00 con folio 2N142027 para el contrato 1AJ103334 con saldo $13,000.00 el dia 02/11/2020 10:40",
+	"numbers":"3314469136",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:59:31: Error al deserializar respuesta negativa: Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+   en Newtonsoft.Json.JsonTextReader.ParseValue()
+   en Newtonsoft.Json.JsonTextReader.Read()
+   en Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   en Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   en Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   en Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   en Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   en Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   en Envio_sms_masivos.MainWindow.EnviarSMSconWS(String _telefono, String _mensaje, Cobro _cobro) en D:\ProyectosGIT\Envio_sms_smsmasivos\Envio_sms_masivos\MainWindow.xaml.cs:línea 674
+2020-11-02 13:59:31: Respuesta recibida: 
+<html><body><h1>503 Service Unavailable</h1>
+No server is available to handle this request.
+</body></html>
+
+2020-11-02 13:59:31: Mensaje no enviado: Error del servidor. Se reintentará después. - 0 - server
+2020-11-02 13:59:31: Se añade cobro a lista de actualizacion con estatus 0
+2020-11-02 13:59:31: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:59:32: 47. 2Z,77835 -> 3336902121
+2020-11-02 13:59:32: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $150.00 con folio 2Z,77835 para el contrato 2CF017633 con saldo $18,550.00 el dia 02/11/2020 10:40",
+	"numbers":"3336902121",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:59:32: Mensaje enviado: PABS: Hemos recibido su abono por $150.00 con folio 2Z,77835 para el contrato 2CF017633 con saldo $18,550.00 el dia 02/11/2020 10:40
+2020-11-02 13:59:32: Referencia: 20110235186dfcb2eUzVVl4gNGyp8ksMn1MS7alh
+2020-11-02 13:59:32: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:59:32: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:59:33: 48. 1C179841 -> 3335760834
+2020-11-02 13:59:33: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $400.00 con folio 1C179841 para el contrato 2AJ040296 con saldo $22,900.00 el dia 02/11/2020 10:40",
+	"numbers":"3335760834",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:59:34: Mensaje enviado: PABS: Hemos recibido su abono por $400.00 con folio 1C179841 para el contrato 2AJ040296 con saldo $22,900.00 el dia 02/11/2020 10:40
+2020-11-02 13:59:34: Referencia: 2011024e86a7b9aa3YFFqVeNWW9kdx3RxOE3j6uN
+2020-11-02 13:59:34: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:59:34: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:59:35: 49. 2N142028 -> 3334757952
+2020-11-02 13:59:35: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $400.00 con folio 2N142028 para el contrato 1AJ098762 con saldo $8,700.00 el dia 02/11/2020 10:41",
+	"numbers":"3334757952",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:59:36: Mensaje enviado: PABS: Hemos recibido su abono por $400.00 con folio 2N142028 para el contrato 1AJ098762 con saldo $8,700.00 el dia 02/11/2020 10:41
+2020-11-02 13:59:37: Referencia: 201102568249d9a8btiGv2Xc3DIDsnp5PhDVqQNa
+2020-11-02 13:59:37: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:59:37: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:59:38: 50. 2N,35500 -> 3312459274
+2020-11-02 13:59:38: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $400.00 con folio 2N,35500 para el contrato 1CJ082373 con saldo $5,800.00 el dia 02/11/2020 10:42",
+	"numbers":"3312459274",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:59:38: Mensaje enviado: PABS: Hemos recibido su abono por $400.00 con folio 2N,35500 para el contrato 1CJ082373 con saldo $5,800.00 el dia 02/11/2020 10:42
+2020-11-02 13:59:38: Referencia: 201102350fddd679f9Oe9H48qQl3K6R7Md3M3Ai3
+2020-11-02 13:59:38: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:59:38: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:59:39: 51. 13I4815 -> 3331443905
+2020-11-02 13:59:39: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $100.00 con folio 13I4815 para el contrato 1AJ091075 con saldo $9,700.00 el dia 02/11/2020 10:42",
+	"numbers":"3331443905",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:59:40: Mensaje enviado: PABS: Hemos recibido su abono por $100.00 con folio 13I4815 para el contrato 1AJ091075 con saldo $9,700.00 el dia 02/11/2020 10:42
+2020-11-02 13:59:40: Referencia: 2011024568cded98eO5V8CGSVZm4zBsPaYombCq2
+2020-11-02 13:59:40: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:59:40: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:59:41: 52. 2N,35501 -> 3316030428
+2020-11-02 13:59:41: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $400.00 con folio 2N,35501 para el contrato 1CJ082372 con saldo $5,800.00 el dia 02/11/2020 10:42",
+	"numbers":"3316030428",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:59:42: Mensaje enviado: PABS: Hemos recibido su abono por $400.00 con folio 2N,35501 para el contrato 1CJ082372 con saldo $5,800.00 el dia 02/11/2020 10:42
+2020-11-02 13:59:42: Referencia: 2011028f391987729YiFQfTx57u1yNGBdKPhvl0S
+2020-11-02 13:59:42: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:59:42: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:59:43: 53. 10Z,16615 -> 3322273572
+2020-11-02 13:59:43: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $100.00 con folio 10Z,16615 para el contrato 2CJ006333 con saldo $14,200.00 el dia 02/11/2020 10:43",
+	"numbers":"3322273572",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:59:43: Mensaje enviado: PABS: Hemos recibido su abono por $100.00 con folio 10Z,16615 para el contrato 2CJ006333 con saldo $14,200.00 el dia 02/11/2020 10:43
+2020-11-02 13:59:43: Referencia: 201102f32fed082bbU9JsdTOvhTzckO02xYsJq76
+2020-11-02 13:59:43: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:59:43: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:59:44: 54. 2Z103561 -> 3339568244
+2020-11-02 13:59:44: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $200.00 con folio 2Z103561 para el contrato 2AJ003753 con saldo $16,100.00 el dia 02/11/2020 10:43",
+	"numbers":"3339568244",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:59:45: Mensaje enviado: PABS: Hemos recibido su abono por $200.00 con folio 2Z103561 para el contrato 2AJ003753 con saldo $16,100.00 el dia 02/11/2020 10:43
+2020-11-02 13:59:45: Referencia: 201102a3b213aaba9MYgB4IM5cJvSrg5230yJIf6
+2020-11-02 13:59:45: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:59:45: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:59:46: 55. 10Z,16616 -> 3331064397
+2020-11-02 13:59:46: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $100.00 con folio 10Z,16616 para el contrato 1CJ110213 con saldo $9,100.00 el dia 02/11/2020 10:43",
+	"numbers":"3331064397",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:59:47: Mensaje enviado: PABS: Hemos recibido su abono por $100.00 con folio 10Z,16616 para el contrato 1CJ110213 con saldo $9,100.00 el dia 02/11/2020 10:43
+2020-11-02 13:59:47: Referencia: 20110298b8648dc592C3P8Weo8elADBbjR6gNdq6
+2020-11-02 13:59:47: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:59:47: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:59:48: 56. 8X33049 -> 3327876704
+2020-11-02 13:59:48: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $75.00 con folio 8X33049 para el contrato 2AJ006936 con saldo $16,575.00 el dia 02/11/2020 10:44",
+	"numbers":"3327876704",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:59:49: Mensaje enviado: PABS: Hemos recibido su abono por $75.00 con folio 8X33049 para el contrato 2AJ006936 con saldo $16,575.00 el dia 02/11/2020 10:44
+2020-11-02 13:59:49: Referencia: 20110292acd436b68sqJF3Y3Z3UVo4VEfxz7zLUe
+2020-11-02 13:59:49: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:59:49: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:59:50: 57. 8X33050 -> 3327876704
+2020-11-02 13:59:50: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $75.00 con folio 8X33050 para el contrato 2AJ006934 con saldo $16,400.00 el dia 02/11/2020 10:44",
+	"numbers":"3327876704",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:59:51: Mensaje enviado: PABS: Hemos recibido su abono por $75.00 con folio 8X33050 para el contrato 2AJ006934 con saldo $16,400.00 el dia 02/11/2020 10:44
+2020-11-02 13:59:51: Referencia: 201102a8cf62b2ad1qHaDhvMAWchTybeLJ9M0oKO
+2020-11-02 13:59:51: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:59:51: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:59:52: 58. 2Z,77836 -> 3339535035
+2020-11-02 13:59:52: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $75.00 con folio 2Z,77836 para el contrato 1CF028670 con saldo $3,150.00 el dia 02/11/2020 10:44",
+	"numbers":"3339535035",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:59:53: Mensaje enviado: PABS: Hemos recibido su abono por $75.00 con folio 2Z,77836 para el contrato 1CF028670 con saldo $3,150.00 el dia 02/11/2020 10:44
+2020-11-02 13:59:53: Referencia: 2011020a7e2d80055j62aNUFHwbGTKjO09oAY1z6
+2020-11-02 13:59:53: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:59:53: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:59:54: 59. 13I4816 -> 3312397724
+2020-11-02 13:59:54: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $100.00 con folio 13I4816 para el contrato 1AJ094263 con saldo $7,600.00 el dia 02/11/2020 10:44",
+	"numbers":"3312397724",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:59:55: Mensaje enviado: PABS: Hemos recibido su abono por $100.00 con folio 13I4816 para el contrato 1AJ094263 con saldo $7,600.00 el dia 02/11/2020 10:44
+2020-11-02 13:59:55: Referencia: 2011029bffad6769bjGmGLyexw5GjYZj1LIZ2hhg
+2020-11-02 13:59:55: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:59:55: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:59:56: 60. 2N,35502 -> 3338263755
+2020-11-02 13:59:56: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $300.00 con folio 2N,35502 para el contrato 1CJ108138 con saldo $10,500.00 el dia 02/11/2020 10:45",
+	"numbers":"3338263755",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:59:56: Mensaje enviado: PABS: Hemos recibido su abono por $300.00 con folio 2N,35502 para el contrato 1CJ108138 con saldo $10,500.00 el dia 02/11/2020 10:45
+2020-11-02 13:59:56: Referencia: 201102dca26f69636EVZqHqTleTypHYq09S99WBb
+2020-11-02 13:59:56: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:59:56: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:59:57: 61. 2Z,77837 -> 3323811492
+2020-11-02 13:59:57: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $100.00 con folio 2Z,77837 para el contrato 1CF045162 con saldo $5,300.00 el dia 02/11/2020 10:45",
+	"numbers":"3323811492",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 13:59:58: Mensaje enviado: PABS: Hemos recibido su abono por $100.00 con folio 2Z,77837 para el contrato 1CF045162 con saldo $5,300.00 el dia 02/11/2020 10:45
+2020-11-02 13:59:58: Referencia: 2011021411b0fe5c0gCKJOF7CB41HzkxV4mCvhiK
+2020-11-02 13:59:58: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 13:59:58: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 13:59:59: 62. 2S100348 -> 3312551352
+2020-11-02 13:59:59: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $75.00 con folio 2S100348 para el contrato 1AJ043161 con saldo $2,475.00 el dia 02/11/2020 10:45",
+	"numbers":"3312551352",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 14:00:01: Mensaje enviado: PABS: Hemos recibido su abono por $75.00 con folio 2S100348 para el contrato 1AJ043161 con saldo $2,475.00 el dia 02/11/2020 10:45
+2020-11-02 14:00:01: Referencia: 201102d87c5829195oCWJ1lGfa3uR4wqowFp53Xo
+2020-11-02 14:00:01: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 14:00:01: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 14:00:02: 63. 10Z,16617 -> 3315978452
+2020-11-02 14:00:02: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $300.00 con folio 10Z,16617 para el contrato 1CJ035592 con saldo $1,800.00 el dia 02/11/2020 10:46",
+	"numbers":"3315978452",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 14:00:03: Mensaje enviado: PABS: Hemos recibido su abono por $300.00 con folio 10Z,16617 para el contrato 1CJ035592 con saldo $1,800.00 el dia 02/11/2020 10:46
+2020-11-02 14:00:03: Referencia: 2011022df6532fd4bep1lNllokRHRLBTf6MO2a0s
+2020-11-02 14:00:03: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 14:00:03: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 14:00:04: 64. 2S100349 -> 3319834751
+2020-11-02 14:00:04: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $100.00 con folio 2S100349 para el contrato 1AJ081360 con saldo $5,825.00 el dia 02/11/2020 10:46",
+	"numbers":"3319834751",
+	"country_code":"52",
+	"sandbox":"0"
+}
+2020-11-02 14:00:05: Mensaje enviado: PABS: Hemos recibido su abono por $100.00 con folio 2S100349 para el contrato 1AJ081360 con saldo $5,825.00 el dia 02/11/2020 10:46
+2020-11-02 14:00:05: Referencia: 2011023fae4a8dc0eZmLqpaoRC9OcITBZkFd1Qbj
+2020-11-02 14:00:05: Se añade cobro a lista de actualizacion con estatus 3
+2020-11-02 14:00:05: 
+---------------------------------------------------------------------------------------------------
+2020-11-02 14:00:06: 65. 2Z103562 -> 3334068364
+2020-11-02 14:00:06: Llamada al servicio:
+{
+	"message":"PABS: Hemos recibido su abono por $50.00 con folio 2Z103562 para el contrato 1AG004353 con saldo $50.00 el dia 02/11/2020 10:47",
+	"numbers":"3334068364",
+	"country_code":"52",
+	"sandbox":"0"
+}

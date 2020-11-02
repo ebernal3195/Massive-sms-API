@@ -162,7 +162,7 @@ namespace Envio_sms_masivos
 
         private void Window_Closed(object sender, EventArgs e)
         {
-            Bitacora.Logger.Error("Se termina programa" + Environment.NewLine + "##############################################################" + Environment.NewLine);
+            Bitacora.Logger.Error("Se termina programa" + Environment.NewLine + "######################################################################################" + Environment.NewLine);
         }
 
         #endregion
@@ -374,6 +374,7 @@ namespace Envio_sms_masivos
                     return;
                 }
 
+
                 Thread hiloActualizacionCobro;
                 ContinuarActualizandoEcobro = true;
 
@@ -382,6 +383,8 @@ namespace Envio_sms_masivos
                 hiloActualizacionCobro.Start();
 
                 ContinuarEnviandoMensajes = true;
+
+                EscribirLinea();
 
                 foreach (Cobro _cobro in listaCobros)
                 {
@@ -395,7 +398,7 @@ namespace Envio_sms_masivos
                     }
                 }
 
-                Bitacora.Logger.Info("Se termina proceso de envio" + Environment.NewLine + "##############################################################" + Environment.NewLine);
+                Bitacora.Logger.Info("Se termina proceso de envio");
 
                 //Indica al hilo que actualiza los cobros que se detenga
                 ContinuarActualizandoEcobro = false;
@@ -424,8 +427,7 @@ namespace Envio_sms_masivos
             string celular;
             string mensaje;
 
-            string encabezado = $"{_cobro.Indice}. {_cobro.Recibo} -> ";
-            string detalle;
+            Bitacora.Logger.Info($"{_cobro.Indice}. {_cobro.Recibo} -> {_cobro.Celular}");
 
             //VALIDAR CELULAR
             try
@@ -434,21 +436,21 @@ namespace Envio_sms_masivos
 
                 if (celular == string.Empty)
                 {
-                    detalle = $"Error, numero de celular con formato incorrecto {_cobro.Celular}";
-                    Bitacora.Logger.Info(encabezado + detalle);
+                    Bitacora.Logger.Info($"Error, numero de celular con formato incorrecto {_cobro.Celular}");
 
                     _cobro.ResultadoEnvio = "8";
                     listaActualizacionWeb.Add(_cobro);
+                    EscribirLinea();
                     return;
                 }
             }
             catch (Exception ex)
             {
-                detalle = $"Error al validar celular {ex.Message}";
-                Bitacora.Logger.Info(encabezado + detalle);
+                Bitacora.Logger.Info($"Error al validar celular {ex.Message}");
 
                 _cobro.ResultadoEnvio = "999";
                 listaActualizacionWeb.Add(_cobro);
+                EscribirLinea();
                 return;
             }
 
@@ -459,21 +461,21 @@ namespace Envio_sms_masivos
 
                 if (mensaje == "")
                 {
-                    detalle = $"Se compuso un mensaje vacio";
-                    Bitacora.Logger.Info(encabezado + detalle);
+                    Bitacora.Logger.Info($"Error: No se pudo construir el mensaje");
 
                     _cobro.ResultadoEnvio = "7";
                     listaActualizacionWeb.Add(_cobro);
+                    EscribirLinea();
                     return;
                 }
             }
             catch (Exception ex)
             {
-                detalle = $"Error al construir mensaje {ex.Message}";
-                Bitacora.Logger.Info(encabezado + detalle);
+                Bitacora.Logger.Info($"Error al construir mensaje {ex.Message}");
 
                 _cobro.ResultadoEnvio = "999";
                 listaActualizacionWeb.Add(_cobro);
+                EscribirLinea();
                 return;
             }
 
@@ -481,29 +483,28 @@ namespace Envio_sms_masivos
             try
             {
                 //Nota: si se agota el saldo del servicio se interrumpe el envío
-                if (EnviarSMSconWS(celular, mensaje, _cobro))
-                {
-                    detalle = $"Mensaje enviado a {celular}: {mensaje} >>> Referencia del sms: {_cobro.referencia}";
-                    Bitacora.Logger.Info(encabezado + detalle);
-                }
-                else
-                {
-                    detalle = $"No se envió el mensaje: {_cobro.DescripciónResultado} >>> Codigo de error: {_cobro.referencia}";
-                    Bitacora.Logger.Info(encabezado + detalle);
-                }
-
+                EnviarSMSconWS(celular, mensaje, _cobro);
                 listaActualizacionWeb.Add(_cobro);
+                Bitacora.Logger.Info($"Se añade cobro a lista de actualizacion con estatus {_cobro.ResultadoEnvio}");
 
+                EscribirLinea();
                 Thread.Sleep(Convert.ToInt32(segundos_sleep_envio_sms * 1000));
             }
             catch (Exception ex)
             {
-                detalle = $"Error al enviar mensaje por API en cobro {ex.Message}";
-                Bitacora.Logger.Info(encabezado + detalle);
+                Bitacora.Logger.Info($"Error al enviar mensaje por API en cobro {ex.Message}");
 
                 _cobro.ResultadoEnvio = "999";
                 listaActualizacionWeb.Add(_cobro);
+
+                EscribirLinea();
+                Thread.Sleep(Convert.ToInt32(segundos_sleep_envio_sms * 1000));
             }
+        }
+
+        private void EscribirLinea()
+        {
+            Bitacora.Logger.Info(Environment.NewLine + "---------------------------------------------------------------------------------------------------");
         }
 
         /// <summary>
@@ -634,7 +635,9 @@ namespace Envio_sms_masivos
 
                 string cadenaEnvio = "{\n\t\"message\":\"" + _mensaje +
                     "\",\n\t\"numbers\":\"" + _telefono +
-                    "\",\n\t\"country_code\":\"52\",\n\t\"sandbox\":\"" + Sandbox + "\",\n\t\"name\":\"sms-por-cobro\"\n}";
+                    "\",\n\t\"country_code\":\"52\",\n\t\"sandbox\":\"" + Sandbox + "\"\n}";
+
+                Bitacora.Logger.Info("Llamada al servicio:" + Environment.NewLine + cadenaEnvio);
 
                 request.AddParameter("application/json", cadenaEnvio, ParameterType.RequestBody);
 
@@ -647,12 +650,16 @@ namespace Envio_sms_masivos
                         _cobro.ResultadoEnvio = "3";
                         _cobro.DescripciónResultado = "Mensaje enviado";
 
+                        Bitacora.Logger.Info($"Mensaje enviado: {_mensaje}");
+
                         RespuestaExito respuesta = JsonConvert.DeserializeObject<RespuestaExito>(response.Content);
                         _cobro.referencia = respuesta.references[0].reference;
+
+                        Bitacora.Logger.Info($"Referencia: {_cobro.referencia}");
                     }
                     catch (Exception ex)
                     {
-                        Bitacora.Logger.Info("Error al deserializar respuesta correcta: " + ex.ToString());
+                        Bitacora.Logger.Info("Error al deserializar respuesta positiva: " + ex.ToString());
                     }
 
                     return true;
@@ -669,7 +676,15 @@ namespace Envio_sms_masivos
                     }
                     catch (Exception ex)
                     {
-                        Bitacora.Logger.Info("Error al deserializar respuesta fallida: " + ex.ToString());
+                        //Bitacora.Logger.Fatal(ex, "Error al deserializar respuesta negativa");
+                        //Bitacora.Logger.Info($"Error al deserializar respuesta negativa: " + ex.ToString());
+                        Bitacora.Logger.Info($"Respuesta recibida: " + Environment.NewLine + response.Content);
+
+                        //Cuando falla el servidor envia una respuesta html
+                        if (response.Content.Contains("server"))
+                        {
+                            RespuestaEnvio = "server";
+                        }
 
                         //Cuando falle, iniciar búsqueda en el JSON
                         if (response.Content.Contains("auth_01"))
@@ -732,89 +747,96 @@ namespace Envio_sms_masivos
 
                     //Asignar resultado del envio al cobro
                     switch (RespuestaEnvio)
-                        {
-                            case "auth_01":
-                                _cobro.ResultadoEnvio = "-3";
-                                _cobro.DescripciónResultado = "Usuario no autorizado";
-                                _cobro.referencia = RespuestaEnvio;
-                                break;
-                            case "sms_01":
-                                _cobro.ResultadoEnvio = "7";
-                                _cobro.DescripciónResultado = "Mensaje indefinido";
-                                _cobro.referencia = RespuestaEnvio;
-                                break;
-                            case "sms_02":
-                                _cobro.ResultadoEnvio = "7";
-                                _cobro.DescripciónResultado = "Mensaje muy largo";
-                                _cobro.referencia = RespuestaEnvio;
-                                break;
-                            case "sms_03":
-                                _cobro.ResultadoEnvio = "8";
-                                _cobro.DescripciónResultado = "Número indefinido";
-                                _cobro.referencia = RespuestaEnvio;
-                                break;
-                            case "sms_04":
-                                _cobro.ResultadoEnvio = "8";
-                                _cobro.DescripciónResultado = "Número con formato incorrecto";
-                                _cobro.referencia = RespuestaEnvio;
-                                break;
-                            case "sms_05":
-                                _cobro.ResultadoEnvio = "8";
-                                _cobro.DescripciónResultado = "Código de país indefinido";
-                                _cobro.referencia = RespuestaEnvio;
-                                break;
-                            case "sms_06":
-                                _cobro.ResultadoEnvio = "7";
-                                _cobro.DescripciónResultado = "Nombre muy largo";
-                                _cobro.referencia = RespuestaEnvio;
-                                break;
+                    {
+                        case "auth_01":
+                            _cobro.ResultadoEnvio = "-3";
+                            _cobro.DescripciónResultado = "Usuario no autorizado";
+                            _cobro.referencia = RespuestaEnvio;
+                            break;
+                        case "sms_01":
+                            _cobro.ResultadoEnvio = "7";
+                            _cobro.DescripciónResultado = "Mensaje indefinido";
+                            _cobro.referencia = RespuestaEnvio;
+                            break;
+                        case "sms_02":
+                            _cobro.ResultadoEnvio = "7";
+                            _cobro.DescripciónResultado = "Mensaje muy largo";
+                            _cobro.referencia = RespuestaEnvio;
+                            break;
+                        case "sms_03":
+                            _cobro.ResultadoEnvio = "8";
+                            _cobro.DescripciónResultado = "Número indefinido";
+                            _cobro.referencia = RespuestaEnvio;
+                            break;
+                        case "sms_04":
+                            _cobro.ResultadoEnvio = "8";
+                            _cobro.DescripciónResultado = "Número con formato incorrecto";
+                            _cobro.referencia = RespuestaEnvio;
+                            break;
+                        case "sms_05":
+                            _cobro.ResultadoEnvio = "8";
+                            _cobro.DescripciónResultado = "Código de país indefinido";
+                            _cobro.referencia = RespuestaEnvio;
+                            break;
+                        case "sms_06":
+                            _cobro.ResultadoEnvio = "7";
+                            _cobro.DescripciónResultado = "Nombre muy largo";
+                            _cobro.referencia = RespuestaEnvio;
+                            break;
 
-                            case "sms_07": //Si se agotó el saldo dejar de enviar mensajes
+                        case "sms_07": //Si se agotó el saldo dejar de enviar mensajes
 
-                                ContinuarEnviandoMensajes = false;
-                                Bitacora.Logger.Info("Se agotó el saldo");
-                                Bitacora.Logger.Fatal("Se agotó el saldo");
-                                _cobro.ResultadoEnvio = "101";
-                                _cobro.DescripciónResultado = "Se agotó el saldo";
-                                _cobro.referencia = "sms_07";
-                                break;
+                            ContinuarEnviandoMensajes = false;
+                            Bitacora.Logger.Info("Se agotó el saldo");
+                            Bitacora.Logger.Fatal("Se agotó el saldo");
+                            _cobro.ResultadoEnvio = "101";
+                            _cobro.DescripciónResultado = "Se agotó el saldo";
+                            _cobro.referencia = "sms_07";
+                            break;
 
-                            case "sms_12":
-                                _cobro.ResultadoEnvio = "9";
-                                _cobro.DescripciónResultado = "Error al enviar los mensajes";
-                                _cobro.referencia = RespuestaEnvio;
-                                break;
-                            case "sms_13":
-                                _cobro.ResultadoEnvio = "9";
-                                _cobro.DescripciónResultado = "Error al enviar los mensajes";
-                                _cobro.referencia = RespuestaEnvio;
-                                break;
-                            case "sms_15":
-                                _cobro.ResultadoEnvio = "-201";
-                                _cobro.DescripciónResultado = "Máximo 500 mensajes por envío";
-                                _cobro.referencia = RespuestaEnvio;
-                                break;
-                            case "sms_16":
-                                _cobro.ResultadoEnvio = "-201";
-                                _cobro.DescripciónResultado = "Número repetido";
-                                _cobro.referencia = RespuestaEnvio;
-                                break;
-                            case "sms_17":
-                                _cobro.ResultadoEnvio = "-201";
-                                _cobro.DescripciónResultado = "Máximo 1,000 envíos por día en modo de pruebas";
-                                _cobro.referencia = RespuestaEnvio;
-                                break;
-                            case "sms_18":
-                                _cobro.ResultadoEnvio = "6";
-                                _cobro.DescripciónResultado = "Código de país no soportado";
-                                _cobro.referencia = RespuestaEnvio;
-                                break;
-                            default:
-                                _cobro.ResultadoEnvio = "5";
-                                _cobro.DescripciónResultado = "No hay descripción disponible para el error";
-                                _cobro.referencia = $"Código de error desconocido: {RespuestaEnvio}";
-                                break;
-                        }
+                        case "sms_12":
+                            _cobro.ResultadoEnvio = "9";
+                            _cobro.DescripciónResultado = "Error al enviar los mensajes";
+                            _cobro.referencia = RespuestaEnvio;
+                            break;
+                        case "sms_13":
+                            _cobro.ResultadoEnvio = "9";
+                            _cobro.DescripciónResultado = "Error al enviar los mensajes";
+                            _cobro.referencia = RespuestaEnvio;
+                            break;
+                        case "sms_15":
+                            _cobro.ResultadoEnvio = "-201";
+                            _cobro.DescripciónResultado = "Máximo 500 mensajes por envío";
+                            _cobro.referencia = RespuestaEnvio;
+                            break;
+                        case "sms_16":
+                            _cobro.ResultadoEnvio = "-201";
+                            _cobro.DescripciónResultado = "Número repetido";
+                            _cobro.referencia = RespuestaEnvio;
+                            break;
+                        case "sms_17":
+                            _cobro.ResultadoEnvio = "-201";
+                            _cobro.DescripciónResultado = "Máximo 1,000 envíos por día en modo de pruebas";
+                            _cobro.referencia = RespuestaEnvio;
+                            break;
+                        case "sms_18":
+                            _cobro.ResultadoEnvio = "6";
+                            _cobro.DescripciónResultado = "Código de país no soportado";
+                            _cobro.referencia = RespuestaEnvio;
+                            break;
+                        case "server":
+                            _cobro.ResultadoEnvio = "0";
+                            _cobro.DescripciónResultado = "Error del servidor. Se reintentará después.";
+                            _cobro.referencia = RespuestaEnvio;
+                            break;
+                        default:
+                            _cobro.ResultadoEnvio = "5";
+                            _cobro.DescripciónResultado = "No hay descripción disponible para el error";
+                            _cobro.referencia = $"Código de error desconocido: {response.Content}";
+                            break;
+                    }
+
+                    Bitacora.Logger.Info($"Mensaje no enviado: {_cobro.DescripciónResultado} - {_cobro.ResultadoEnvio} - {_cobro.referencia}");
 
                     return false;
                 }
@@ -889,6 +911,10 @@ namespace Envio_sms_masivos
         /// <param name="msgResultado">Mensaje resultante del envio del mensaje</param>
         private bool ActualizarCobro(Cobro _cobro)
         {
+            //TEST
+            //return true;
+            //FIN TEST
+
             try
             {
                 //Consumo de WS -> Actualizar cobro

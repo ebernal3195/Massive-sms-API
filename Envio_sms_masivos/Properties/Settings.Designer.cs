@@ -73,7 +73,7 @@ namespace Envio_sms_masivos.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0.1")]
+        [global::System.Configuration.DefaultSettingValueAttribute("0.5")]
         public decimal SegundosSleepActualizacion {
             get {
                 return ((decimal)(this["SegundosSleepActualizacion"]));
@@ -111,7 +111,7 @@ namespace Envio_sms_masivos.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0.1")]
+        [global::System.Configuration.DefaultSettingValueAttribute("0.5")]
         public decimal SegundosSleepEnviarMensaje {
             get {
                 return ((decimal)(this["SegundosSleepEnviarMensaje"]));
