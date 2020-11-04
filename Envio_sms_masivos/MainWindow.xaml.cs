@@ -162,7 +162,8 @@ namespace Envio_sms_masivos
 
         private void Window_Closed(object sender, EventArgs e)
         {
-            Bitacora.Logger.Error("Se termina programa" + Environment.NewLine + "######################################################################################" + Environment.NewLine);
+            Bitacora.Logger.Error("Se termina programa" + Environment.NewLine + "######################################################################################" + Environment.NewLine + Environment.NewLine);
+            Bitacora.Logger.Info(Environment.NewLine + "############################## Se termina programa #########################" + Environment.NewLine + Environment.NewLine);
         }
 
         #endregion
@@ -399,6 +400,9 @@ namespace Envio_sms_masivos
                 }
 
                 Bitacora.Logger.Info("Se termina proceso de envio");
+                Bitacora.Logger.Info(Environment.NewLine + "###############################################################################################" +
+                    Environment.NewLine + "###############################################################################################" +
+                    Environment.NewLine + "###############################################################################################");
 
                 //Indica al hilo que actualiza los cobros que se detenga
                 ContinuarActualizandoEcobro = false;
