@@ -381,7 +381,10 @@ namespace Envio_sms_masivos
 
                 //Instancia e inicia un hilo que marcará los cobros que ya fueron actualizados
                 hiloActualizacionCobro = new Thread(() => RevisarListaActualizacion());
+                
+                //PRODUCCION -> DESCOMENTAR (NO ES TEST)
                 hiloActualizacionCobro.Start();
+                //PRODUCCION -> DESCOMENTAR (NO ES TEST)
 
                 ContinuarEnviandoMensajes = true;
 
@@ -391,13 +394,23 @@ namespace Envio_sms_masivos
                 {
                     if (ContinuarEnviandoMensajes)
                     {
+                        //TEST
+                        //listaActualizacionWeb.Add(_cobro);
+                        //FIN TEST
+
+                        //PRODUCCION -> DESCOMENTAR (NO ES TEST)
                         EnviarSMS(_cobro);
+                        //PRODUCCION -> DESCOMENTAR (NO ES TEST)
                     }
                     else
                     {
                         break;
                     }
                 }
+
+                //TEST
+                //hiloActualizacionCobro.Start();
+                //FIN TEST
 
                 Bitacora.Logger.Info("Se termina proceso de envio");
                 Bitacora.Logger.Info(Environment.NewLine + "###############################################################################################" +
@@ -869,28 +882,59 @@ namespace Envio_sms_masivos
         private void RevisarListaActualizacion()
         {
             Cobro _cobro;
+            int ContadorIntentos = 1;
 
             Bitacora.Logger.Error("Comienza revisión de lista");
 
             do
             {
+                ContadorIntentos = 1;
+
                 if (listaActualizacionWeb.Count > 0)
                 {
                     try
                     {
                         _cobro = listaActualizacionWeb[0];
 
-                        if (ActualizarCobro(_cobro))
+                        //Se realizan 3 intentos de actualización en eCobro, si todos fallan se termina el programa
+                        do
                         {
-                            try
+                            if (ActualizarCobro(_cobro))
                             {
-                                listaActualizacionWeb.RemoveAt(0);
+                                try
+                                {
+                                    listaActualizacionWeb.RemoveAt(0);
+                                    break;
+                                }
+                                catch (Exception ex)
+                                {
+                                    //En caso de error terminar el programa
+                                    Bitacora.Logger.Error($"{_cobro.Indice}. {_cobro.Recibo} -> Error al remover en lista de actualización el cobro {ex.Message}");
+                                    Bitacora.Logger.Fatal($"Error al remover en lista de actualización el cobro: {ex.Message}");
+                                    ContadorIntentos = 4;
+                                }
                             }
-                            catch (Exception ex)
+                            else
                             {
-                                Bitacora.Logger.Error($"{_cobro.Indice}. {_cobro.Recibo} -> Error al remover en lista de actualización el cobro {ex.Message}");
+                                Bitacora.Logger.Error($"{_cobro.Indice}. {_cobro.Recibo} -> Termina intento {ContadorIntentos} de actualizacion");
+
+                                //Esperar 1 segundo en caso de error
+                                Thread.Sleep(Convert.ToInt32(1000));
+
+                                ContadorIntentos = ContadorIntentos + 1;
                             }
-                        }
+
+                            if (ContadorIntentos == 4)
+                            {
+                                ContinuarEnviandoMensajes = false;
+                                ContinuarActualizandoEcobro = false;
+                                listaActualizacionWeb.Clear();
+                                Bitacora.Logger.Error("Se termina programa por que no es posible actualizar en eCobro");
+                                Bitacora.Logger.Fatal("Se termina programa por que no es posible actualizar en eCobro");
+                            }
+
+                        } while (ContadorIntentos <= 3);
+                        
                     }
                     catch (Exception ex)
                     {
@@ -916,7 +960,7 @@ namespace Envio_sms_masivos
         private bool ActualizarCobro(Cobro _cobro)
         {
             //TEST
-            //return true;
+            //return false;
             //FIN TEST
 
             try

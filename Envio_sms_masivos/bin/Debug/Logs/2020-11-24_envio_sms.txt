@@ -1,0 +1,43 @@
+2020-11-24 14:12:37: Se inicia programa
+2020-11-24 14:12:37: Se cargó la configuración
+2020-11-24 14:12:37: Ejecución en modo de pruebas (el mensaje no llegará al celular ni se descontará del saldo)
+2020-11-24 14:12:37: Comienza ejecución en modo no automático
+2020-11-24 14:12:38: Comienza consulta de cobros
+2020-11-24 14:12:55: Cobros obtenidos: 1000
+2020-11-24 14:14:20: Se inicia programa
+2020-11-24 14:14:20: Se cargó la configuración
+2020-11-24 14:14:20: Ejecución en modo de pruebas (el mensaje no llegará al celular ni se descontará del saldo)
+2020-11-24 14:14:21: Comienza ejecución en modo no automático
+2020-11-24 14:14:21: Comienza consulta de cobros
+2020-11-24 14:14:39: Cobros obtenidos: 1000
+2020-11-24 14:14:39: Saldo disponible: 56707
+2020-11-24 14:14:42: 
+---------------------------------------------------------------------------------------------------
+2020-11-24 14:16:59: Se inicia programa
+2020-11-24 14:16:59: Se cargó la configuración
+2020-11-24 14:16:59: Ejecución en modo de pruebas (el mensaje no llegará al celular ni se descontará del saldo)
+2020-11-24 14:16:59: Comienza ejecución en modo no automático
+2020-11-24 14:17:00: Comienza consulta de cobros
+2020-11-24 14:17:18: Cobros obtenidos: 1000
+2020-11-24 14:17:19: Saldo disponible: 56614
+2020-11-24 14:17:19: 
+---------------------------------------------------------------------------------------------------
+2020-11-24 14:17:22: Se termina proceso de envio
+2020-11-24 14:17:24: 
+###############################################################################################
+###############################################################################################
+###############################################################################################
+2020-11-24 14:18:06: Se inicia programa
+2020-11-24 14:18:06: Se cargó la configuración
+2020-11-24 14:18:06: Ejecución en modo de pruebas (el mensaje no llegará al celular ni se descontará del saldo)
+2020-11-24 14:18:06: Comienza ejecución en modo no automático
+2020-11-24 14:18:06: Comienza consulta de cobros
+2020-11-24 14:18:24: Cobros obtenidos: 1000
+2020-11-24 14:18:25: Saldo disponible: 56573
+2020-11-24 14:18:25: 
+---------------------------------------------------------------------------------------------------
+2020-11-24 14:18:32: Se termina proceso de envio
+2020-11-24 14:18:34: 
+###############################################################################################
+###############################################################################################
+###############################################################################################

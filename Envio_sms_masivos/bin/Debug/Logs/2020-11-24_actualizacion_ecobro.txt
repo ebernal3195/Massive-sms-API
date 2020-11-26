@@ -1,0 +1,4 @@
+2020-11-24 14:14:42: Comienza revisión de lista
+2020-11-24 14:17:26: Comienza revisión de lista
+2020-11-24 14:18:35: Comienza revisión de lista
+2020-11-24 14:19:07: Se termina programa por que no es posible actualizar en eCobro
